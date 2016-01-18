@@ -1,0 +1,31 @@
+{
+	"port" : 8080,
+	"db": {
+		"name" : "school",
+		"test_name" : "school_test"
+	},
+	"mongoose" :  {
+		"uri" : "mongodb://localhost/school",
+		"test_uri" : "mongodb://localhost/school_test",
+		"options" : {
+			"server" : {
+				"socketOptions" : {
+					"keepAive" : 1
+				}
+			}
+		}
+	},
+	"autentification" : {
+		"username" : "admin",
+		"password" : "brainary1234maxphilip"
+	},
+	"session" : {
+		"secret" : "school..school",
+		"key" : "sid",
+		"cookie" : {
+			"path" : "/",
+			"httpOnly" : true,
+			"maxAge" : null
+		}
+	}
+}

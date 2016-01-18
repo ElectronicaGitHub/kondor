@@ -1,0 +1,104 @@
+<%- layout('base.ejs')%>
+<% block('title', 'brainary.ru | Админка') -%>
+
+<!-- <script src="/libs/tinymce/tinymce.min.js"></script> -->
+<!-- <script src="/libs/angular-ui-tinymce/src/tinymce.js"></script> -->
+<script src="/javascripts/controllers/admin.js"></script>
+<link rel="stylesheet" href="/stylesheets/admin.css">
+
+<div ng-controller="Admin">
+	<div class="tabs">
+		<div class="tab" ng-class="{ selected : view == 'users' }" ng-click="selectView('users')">Юзеры</div>
+		<div class="tab" ng-class="{ selected : view == 'courses' }" ng-click="selectView('courses')">Курсы</div>
+		<div class="tab" ng-class="{ selected : view == 'collections' }" ng-click="selectView('collections')">Наборы</div>
+		<div class="tab" ng-class="{ selected : view == 'lessons' }" ng-click="selectView('lessons')">Уроки</div>
+		<div class="tab" ng-class="{ selected : view == 'questions' }" ng-click="selectView('questions')">Вопросы</div>
+		<div class="tab" ng-class="{ selected : view == 'answers' }" ng-click="selectView('answers')">Ответы</div>
+		<div class="tab" ng-class="{ selected : view == 'comments' }" ng-click="selectView('comments')">Комменты</div>
+		<div class="tab" ng-class="{ selected : view == 'tags' }" ng-click="selectView('tags')">Теги</div>
+	</div>
+
+	<div class="views">
+		<div class="view" ng-if="view == 'users'">
+			<div class="users-list">
+				<div ng-repeat="elem in models.users">
+					<table>
+						<tr ng-if="$index == 0"><th>Вход</th><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td><button ng-click="users.impersonate(elem)">Зайти за пользователя</button></td><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'courses'">
+			<div class="courses-list">
+				<div ng-repeat="elem in models.courses">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'collections'">
+			<div class="collections-list">
+				<div ng-repeat="elem in models.collections">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'lessons'">
+			<div class="lessons-list">
+				<div ng-repeat="elem in models.lessons">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'questions'">
+			<div class="questions-list">
+				<div ng-repeat="elem in models.questions">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'answers'">
+			<div class="answers-list">
+				<div ng-repeat="elem in models.answers">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'comments'">
+			<div class="comments-list">
+				<div ng-repeat="elem in models.comments">
+					<table>
+						<tr ng-if="$index == 0"><th ng-repeat="(k, v) in arr">{{ v }}</th></tr>
+						<tr><td ng-repeat="(k, v) in arr"><p>{{ elem[k] || 'Не указано' }}</p></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="view" ng-if="view == 'tags'">
+			<p><button ng-click="tags.createModel()" ng-if="models.tags.length == 0">Создать сущность тэг</button></p>
+			<p>
+				<input placeholer="Новый тег" ng-model="new_tag.name" type="text" class="tags-input">
+				<button ng-click="tags.add(new_tag)">Добавить тэг</button>
+			</p>
+			<div class="tags-list">
+				<div class="each-tag" ng-repeat="tag in models.tags[0].tags">{{ tag }}
+				<span class="tag-remover" ng-click="tags.remove({ name : tag }, $index)"> --X-- </span></div>
+			</div>
+		</div>
+	</div>
+</div>

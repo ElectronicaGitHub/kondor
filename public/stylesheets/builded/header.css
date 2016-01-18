@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Milio';
+  src: url("../../fonts/Milio.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Effra';
+  src: url("../../fonts/Effra/Dalton Maag - Effra Heavy.ttf") format("truetype");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Effra';
+  src: url("../../fonts/Effra/Dalton Maag - Effra Bold.ttf") format("truetype");
+  font-weight: 500; }
+@font-face {
+  font-family: 'Effra';
+  src: url("../../fonts/Effra/Dalton Maag - Effra Medium.ttf") format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Effra';
+  src: url("../../fonts/Effra/Dalton Maag - Effra Light.ttf") format("truetype");
+  font-weight: 100; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../fonts/ProximaNova/regular.ttf") format("truetype");
+  font-weight: 100; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../fonts/ProximaNova/bold.ttf") format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../fonts/ProximaNova/extrabold.ttf") format("truetype");
+  font-weight: 500; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../fonts/ProximaNova/black.ttf") format("truetype");
+  font-weight: 700; }
+html, body {
+  padding: 0;
+  margin: 0; }
+
+html * {
+  font-family: 'Milio';
+  color: #333333; }
+
+html a {
+  text-decoration: none; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  background-color: #FDFDFD; }
+  header .top-panel {
+    position: relative;
+    height: 120px; }
+    header .top-panel .logo {
+      width: 120px;
+      height: 120px;
+      background: white;
+      float: left;
+      background-image: url("/assets/logo-text-no-line.png");
+      background-size: contain;
+      background-position: center;
+      margin-right: 5px; }
+    header .top-panel .content {
+      width: calc(100% - 130px);
+      float: left; }
+      header .top-panel .content .top {
+        height: 60px;
+        font-size: 15px;
+        line-height: 60px;
+        margin-left: 15px; }
+        header .top-panel .content .top a {
+          text-decoration: underline;
+          margin-right: 30px; }
+      header .top-panel .content .bottom {
+        position: relative;
+        height: 60px;
+        margin-top: 5px; }
+        header .top-panel .content .bottom a {
+          float: left;
+          background-color: #CDE6F1;
+          font-family: "Effra";
+          font-weight: 500;
+          padding: 10px 15px;
+          border-radius: 5px;
+          margin-right: 30px;
+          transition: background-color 0.2s; }
+          header .top-panel .content .bottom a:hover {
+            background-color: #a5d2e6; }
+          header .top-panel .content .bottom a.main-focus {
+            background-color: #FFB23F;
+            font-family: "Effra";
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 30px;
+            transition: background-color 0.2s; }
+            header .top-panel .content .bottom a.main-focus:hover {
+              background-color: #ff9e0c; }
+          header .top-panel .content .bottom a.callback {
+            float: right;
+            background-color: #ffcd34;
+            font-family: "Effra";
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 30px;
+            transition: background-color 0.2s; }
+            header .top-panel .content .bottom a.callback:hover {
+              background-color: #ffc001; }
+    header .top-panel .misc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 15px 30px 0 0; }
+      header .top-panel .misc * {
+        font-family: "ProximaNova";
+        font-weight: 700; }
+      header .top-panel .misc .phone {
+        font-size: 20px;
+        color: #333333; }
+        header .top-panel .misc .phone span {
+          color: #FFB23F;
+          font-size: 30px; }
+  header .image-panel {
+    height: 400px;
+    width: 100%; }
+
+/*# sourceMappingURL=header.css.map */
