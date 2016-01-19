@@ -40,22 +40,17 @@
 
 	<script>
 		$(function () {
+			var color = "#ffcd34";
 			$(".image-panel").vegas({
-				color : "#FFB23F",
+				walk : function () {
+					$(".vegas-timer-progress").css("backgroundColor", color);
+				},
+				delay : 4000,
 			    slides: [
-				    // DARK
-			        // { src: "http://www.grandecor.ru/sites/default/files/articleinsert/img_9509.jpg" },
-
-			        // WHITE
-
-			        { src : "http://www.mspaintart.com/i/2016/01/Breathtaking-wooden-bedroom-furniture-ideas-with-white-painted-wall-also-ball-white-table-lamp-on-covered-flooring.jpg"},
-			        // { src: "http://edwahoo.com/wp-content/uploads/2015/11/Exquisite-Small-Home-Types-Of-Interior-Design-with-Glass-Window-facing-Wooden-Dining-Chair-inside-Comfortable-Living-Space-and-Indoor-Plant-on-Big-Flowerpot.jpg"}
-			        // { src : "http://www.esteedecor.com/wp-content/uploads/2015/03/interior-living-room-dining-room-kitchen-bedroom-nyc-interior-designers-and-natural-wooden-kitchen-cabinet-also-home-decorating-ideas-stylish-interior-design-for-studio-apartment.jpg"},
+			        { src : "http://www.mspaintart.com/i/2016/01/Breathtaking-wooden-bedroom-furniture-ideas-with-white-painted-wall-also-ball-white-table-lamp-on-covered-flooring.jpg" },
 			        { src : "http://chicdecoration.com/wp-content/uploads/2015/05/kitchen-interior-furniture-simple-natural-wooden-low-cabinet-countertop-and-sticking-wall-natural-wooden-cabinet-great-idea-of-inspiring-contemporary-kitchen-cabinet-designs-versatile.jpg"},
-			        // { src : "http://teocera.com/wp-content/uploads/2015/11/modern-wooden-chairs-set-wooden-tables-furniture-interior-for-your-kitchen-modern-kitchen-chairs-kitchen-nice-modern-kitchen-chairs-with-tables-design-ideas.jpg"},
 			        { src : "http://www.lotusfolie.com/wp-content/uploads/2015/10/furniture-kitchen-traditional-square-wooden-dining-table-set-next-to-wooden-divider-built-in-kitchen-cabinet-on-dark-brown-wooden-floor-small-apartment-kitchen-table-set-interior-ideas.jpg"},
 			        { src : "http://www.mayobiz.com/wp-content/uploads/2015/08/Rustic-Style-Home-Office-Desk-Interior-Sets-with-Rectangular-Shape-Brown-Wooden-Table-plus-Unique-Cream-Wooden-Ottoman-plus-Single-White-Chair-plus-Gray-Wall-Paint-and-White-Flooring-Ideas.jpg"}
-			        // { src : "http://cajo.co/wp-content/uploads/2015/11/awesome-wooden-kitchen-on-wooden-kitchen-design-savyon-house-interior-design-architecture-and-wooden-kitchen.jpg"},
 			    ]
 			    // overlay: '/libs/vegas/dist/overlays/07.png'
 			});

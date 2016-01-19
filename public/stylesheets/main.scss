@@ -1,3 +1,5 @@
+@import "fonts";
+
 $header_color: #FDFDFD;
 
 $text_color : #333333;
@@ -21,57 +23,6 @@ $super_focus_color : #ffcd34;
 $main_font : 'Effra';
 $secondary_font : 'ProximaNova';
 
-@font-face {
-  font-family: 'Milio';
-  src: url('../../fonts/Milio.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Effra';
-  src: url('../../fonts/Effra/Dalton Maag - Effra Heavy.ttf')  format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Effra';
-  src: url('../../fonts/Effra/Dalton Maag - Effra Bold.ttf')  format('truetype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Effra';
-  src: url('../../fonts/Effra/Dalton Maag - Effra Medium.ttf')  format('truetype');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Effra';
-  src: url('../../fonts/Effra/Dalton Maag - Effra Light.ttf')  format('truetype');
-  font-weight: 100;
-}
-
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../../fonts/ProximaNova/regular.ttf')  format('truetype');
-  font-weight: 100;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../../fonts/ProximaNova/bold.ttf')  format('truetype');
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../../fonts/ProximaNova/extrabold.ttf')  format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../../fonts/ProximaNova/black.ttf')  format('truetype');
-  font-weight: 700;
-}
-
 
 html ,body {
 	padding: 0;
@@ -92,7 +43,7 @@ html a {
 	margin: 0 auto;
 }
 
-@mixin default-button($color) {
+@mixin default-button($color:#fff) {
 	background-color: $color;
 	font-family: $main_font;
 	font-weight: 500;
