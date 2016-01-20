@@ -59,8 +59,8 @@ header {
   background-color: #FDFDFD; }
   header.dropped .slider-drop-down {
     height: 250px;
-    border-top: 1px solid #f3f3f3;
-    border-bottom: 1px solid #f3f3f3; }
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3; }
   header .wrapper {
     position: relative;
     transition: border-bottom .3s;
@@ -160,8 +160,8 @@ header {
     overflow: hidden; }
     header .slider-drop-down:hover {
       height: 250px;
-      border-top: 1px solid #f3f3f3;
-      border-bottom: 1px solid #f3f3f3; }
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3; }
     header .slider-drop-down .menu-wrapper {
       height: 100%;
       background-color: white;
@@ -170,7 +170,7 @@ header {
         width: 40%;
         float: left;
         display: inline-block;
-        border-right: 1px solid #f3f3f3; }
+        border-right: 1px solid #e3e3e3; }
         header .slider-drop-down .menu-wrapper .left-column ul {
           margin: 0;
           padding: 0;
