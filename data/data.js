@@ -1,0 +1,7 @@
+module.exports = {
+	'tovary' : {
+		'stoly' : {
+			
+		}
+	}
+}
