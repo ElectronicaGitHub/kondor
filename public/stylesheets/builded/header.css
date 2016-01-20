@@ -1,4 +1,8 @@
 @font-face {
+  font-family: 'Raleway';
+  src: url("../../fonts/Raleway/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100; }
+@font-face {
   font-family: 'Milio';
   src: url("../../fonts/Milio.ttf") format("truetype"); }
 @font-face {
@@ -38,8 +42,8 @@ html, body {
   margin: 0; }
 
 html * {
-  font-family: 'Milio';
-  color: #333333; }
+  color: #333333;
+  box-sizing: border-box; }
 
 html a {
   text-decoration: none; }
@@ -49,84 +53,162 @@ html a {
   margin: 0 auto; }
 
 header {
+  position: relative;
   width: 100%;
+  height: 120px;
   background-color: #FDFDFD; }
-  header .top-panel {
+  header.dropped .slider-drop-down {
+    height: 250px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3; }
+  header .wrapper {
     position: relative;
-    height: 120px; }
-    header .top-panel .logo {
-      width: 120px;
+    transition: border-bottom .3s;
+    z-index: 10; }
+    header .wrapper .top-panel {
+      position: relative;
       height: 120px;
-      background: white;
-      float: left;
-      background-image: url("/assets/logo-text-no-line.png");
-      background-size: contain;
-      background-position: center;
-      margin-right: 5px; }
-    header .top-panel .content {
-      width: calc(100% - 130px);
-      float: left; }
-      header .top-panel .content .top {
-        height: 60px;
-        font-size: 15px;
-        line-height: 60px;
-        margin-left: 15px; }
-        header .top-panel .content .top a {
-          text-decoration: underline;
-          margin-right: 30px; }
-      header .top-panel .content .bottom {
-        position: relative;
-        height: 60px;
-        margin-top: 5px; }
-        header .top-panel .content .bottom a {
-          float: left;
-          background-color: #fff;
-          font-family: "Effra";
-          font-weight: 500;
-          padding: 10px 15px;
-          border-radius: 5px;
-          margin-right: 30px;
-          transition: background-color 0.2s; }
-          header .top-panel .content .bottom a:hover {
-            background-color: #e6e6e6; }
-          header .top-panel .content .bottom a.main-focus {
-            background-color: #FFB23F;
+      background-color: #FDFDFD;
+      z-index: 5; }
+      header .wrapper .top-panel .logo {
+        width: 120px;
+        height: 120px;
+        background: white;
+        float: left;
+        background-image: url("/assets/logo-text-no-line.png");
+        background-size: contain;
+        background-position: center;
+        margin-right: 5px; }
+      header .wrapper .top-panel .content {
+        width: calc(100% - 130px);
+        float: left; }
+        header .wrapper .top-panel .content .top {
+          height: 60px;
+          font-size: 15px;
+          line-height: 60px;
+          margin-left: 15px; }
+          header .wrapper .top-panel .content .top a {
+            text-decoration: underline;
+            margin-right: 30px;
+            font-family: 'Milio'; }
+        header .wrapper .top-panel .content .bottom {
+          position: relative;
+          margin-top: 5px; }
+          header .wrapper .top-panel .content .bottom a {
+            float: left;
+            background-color: #fff;
             font-family: "Effra";
             font-weight: 500;
             padding: 10px 15px;
             border-radius: 5px;
             margin-right: 30px;
             transition: background-color 0.2s; }
-            header .top-panel .content .bottom a.main-focus:hover {
-              background-color: #ff9e0c; }
-          header .top-panel .content .bottom a.callback {
-            float: right;
-            background-color: #ffcd34;
+            header .wrapper .top-panel .content .bottom a:hover {
+              background-color: #e6e6e6; }
+            header .wrapper .top-panel .content .bottom a.main-focus {
+              position: relative;
+              background-color: #FFB23F;
+              font-family: "Effra";
+              font-weight: 500;
+              padding: 10px 15px;
+              border-radius: 5px;
+              margin-right: 30px;
+              transition: background-color 0.2s; }
+              header .wrapper .top-panel .content .bottom a.main-focus:hover {
+                background-color: #ff9e0c; }
+              header .wrapper .top-panel .content .bottom a.main-focus .menu-helper {
+                height: 40px;
+                width: 100%;
+                position: absolute;
+                bottom: -40;
+                left: 0;
+                cursor: default; }
+            header .wrapper .top-panel .content .bottom a.callback {
+              float: right;
+              background-color: #ffcd34;
+              font-family: "Effra";
+              font-weight: 500;
+              padding: 10px 15px;
+              border-radius: 5px;
+              margin-right: 30px;
+              transition: background-color 0.2s; }
+              header .wrapper .top-panel .content .bottom a.callback:hover {
+                background-color: #ffc001; }
+      header .wrapper .top-panel .misc {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px 35px 0 0; }
+        header .wrapper .top-panel .misc * {
+          font-family: "ProximaNova";
+          font-weight: 700; }
+        header .wrapper .top-panel .misc .phone {
+          font-size: 20px;
+          color: #333333; }
+          header .wrapper .top-panel .misc .phone span {
+            margin-left: 5px;
+            color: #FFB23F;
+            font-size: 30px; }
+  header .slider-drop-down {
+    height: 0;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: height .5s, border-top .2s, border-bottom .2s, top .2s;
+    overflow: hidden; }
+    header .slider-drop-down:hover {
+      height: 250px;
+      border-top: 1px solid #f3f3f3;
+      border-bottom: 1px solid #f3f3f3; }
+    header .slider-drop-down .menu-wrapper {
+      height: 100%;
+      background-color: white;
+      padding: 20px; }
+      header .slider-drop-down .menu-wrapper .left-column {
+        width: 40%;
+        float: left;
+        display: inline-block;
+        border-right: 1px solid #f3f3f3; }
+        header .slider-drop-down .menu-wrapper .left-column ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          float: right; }
+          header .slider-drop-down .menu-wrapper .left-column ul li {
+            height: 26px;
+            line-height: 26px;
             font-family: "Effra";
-            font-weight: 500;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-right: 30px;
-            transition: background-color 0.2s; }
-            header .top-panel .content .bottom a.callback:hover {
-              background-color: #ffc001; }
-    header .top-panel .misc {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 15px 35px 0 0; }
-      header .top-panel .misc * {
-        font-family: "ProximaNova";
-        font-weight: 700; }
-      header .top-panel .misc .phone {
-        font-size: 20px;
-        color: #333333; }
-        header .top-panel .misc .phone span {
-          margin-left: 5px;
-          color: #FFB23F;
-          font-size: 30px; }
-  header .image-panel {
-    height: 400px;
-    width: 100%; }
+            font-weight: 100;
+            font-size: 16px;
+            padding-right: 90px;
+            transition: background-color .2s; }
+            header .slider-drop-down .menu-wrapper .left-column ul li:hover {
+              background-color: #ffefd8; }
+            header .slider-drop-down .menu-wrapper .left-column ul li a {
+              transition: color .2s;
+              padding-left: 20px; }
+            header .slider-drop-down .menu-wrapper .left-column ul li:hover a {
+              color: #000; }
+      header .slider-drop-down .menu-wrapper .right-column {
+        display: inline-block;
+        float: left;
+        width: 60%; }
+        header .slider-drop-down .menu-wrapper .right-column .image-wrapper {
+          left: 100px;
+          position: relative; }
+          header .slider-drop-down .menu-wrapper .right-column .image-wrapper .image {
+            width: 300px;
+            height: 210px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-size: cover; }
+
+.image-panel {
+  height: 400px;
+  width: 96%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=header.css.map */

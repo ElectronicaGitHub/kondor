@@ -30,8 +30,9 @@ html ,body {
 }
 
 html * {
-	font-family: 'Milio';
+	// font-family: 'Milio';
 	color: $text_color;
+	box-sizing: border-box;
 }
 
 html a {

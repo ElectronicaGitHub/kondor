@@ -1,4 +1,8 @@
 @font-face {
+  font-family: 'Raleway';
+  src: url("../../fonts/Raleway/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100; }
+@font-face {
   font-family: 'Milio';
   src: url("../../fonts/Milio.ttf") format("truetype"); }
 @font-face {
@@ -38,8 +42,8 @@ html, body {
   margin: 0; }
 
 html * {
-  font-family: 'Milio';
-  color: #333333; }
+  color: #333333;
+  box-sizing: border-box; }
 
 html a {
   text-decoration: none; }

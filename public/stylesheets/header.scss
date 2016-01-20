@@ -1,81 +1,182 @@
 @import "main";
 
 $header_height: 120px;
+$dd_height: 250px;
+$center_line_length : 100px;
+$line_color : #f3f3f3;
 
 header {
+	&.dropped {
+		// .wrapper {
+		// }
+		.slider-drop-down {
+			height: $dd_height;
+			border-top: 1px solid $line_color;
+			border-bottom: 1px solid $line_color;
+		}
+	}
+	position: relative;
 	width: 100%;
+	height: $header_height;
 	background-color: $header_color;
-	.top-panel {
+	.wrapper {
 		position: relative;
-		height: $header_height;
-		.logo {
-			width: $header_height;
+		// border-bottom: 1px solid rgba(0,0,0,0);
+		transition: border-bottom .3s;
+		z-index: 10;
+		.top-panel {
+			position: relative;
 			height: $header_height;
-			background: white;
-			float: left;
-			background-image: url('/assets/logo-text-no-line.png');
-			background-size: contain;
-			background-position: center;
-			margin-right: 5px;
-		}
-		.content {
-			width: calc(100% - #{$header_height + 10});
-			float: left;
-			.top {
-				height: 60px;
-				font-size: 15px;
-				line-height: 60px;
-				margin-left: 15px;
-				a {
-					text-decoration: underline;
-					margin-right: 30px;
-				}
+			background-color: $header_color;
+			z-index: 5;
+			.logo {
+				width: $header_height;
+				height: $header_height;
+				background: white;
+				float: left;
+				background-image: url('/assets/logo-text-no-line.png');
+				background-size: contain;
+				background-position: center;
+				margin-right: 5px;
 			}
-			.bottom {
-				position: relative;
-				height: 60px;
-				margin-top: 5px;
-				a {
-					float: left;
-					// @include default-button($dark_color);
-					@include default-button();
-					&.main-focus {
-						@include default-button($main_focus_color);
-					}
-					&.callback {
-						float: right;
-						@include default-button($super_focus_color);
+			.content {
+				width: calc(100% - #{$header_height + 10});
+				float: left;
+				.top {
+					height: 60px;
+					font-size: 15px;
+					line-height: 60px;
+					margin-left: 15px;
+					a {
+						text-decoration: underline;
+						margin-right: 30px;
+						font-family: 'Milio';
 					}
 				}
+				.bottom {
+					position: relative;
+					margin-top: 5px;
+					a {
+						float: left;
+						// @include default-button($dark_color);
+						@include default-button();
+						&.main-focus {
+							position: relative;
+							@include default-button($main_focus_color);
+							.menu-helper {
+								height: 40px;
+								width: 100%;
+								position: absolute;
+								bottom: -40;
+								left: 0;
+								cursor: default;
+							}
+						}
+						&.callback {
+							float: right;
+							@include default-button($super_focus_color);
+						}
+					}
+				}
 			}
-		}
-		.misc {
-			position: absolute;
-			top: 0;
-			right: 0;
-			margin: 15px 35px 0 0;
-			* {
-				font-family: $secondary_font;
-				font-weight: 700;
-			}
-			.phone {
-				font-size: 20px;
-				color: $text-color;
-				span {
-					margin-left: 5px;
-					color: $main_focus_color;
-					font-size: 30px;
-					
+			.misc {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 15px 35px 0 0;
+				* {
+					font-family: $secondary_font;
+					font-weight: 700;
+				}
+				.phone {
+					font-size: 20px;
+					color: $text-color;
+					span {
+						margin-left: 5px;
+						color: $main_focus_color;
+						font-size: 30px;
+						
+					}
 				}
 			}
 		}
 	}
-	.image-panel {
-		height: 400px;
+	.slider-drop-down {
+		height: 0;
 		width: 100%;
-		// background-image : url('http://www.grandecor.ru/sites/default/files/articleinsert/img_9509.jpg');
-		// background-position: center;
-		// background-size: 100%;
-		// background-position-y : 390px;
+		z-index: 2;
+		position: absolute;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		transition: height .5s, border-top .2s, border-bottom .2s, top .2s;
+		overflow: hidden;
+		&:hover {
+			height: $dd_height;
+			border-top: 1px solid $line_color;
+			border-bottom: 1px solid $line_color;
+		}
+		.menu-wrapper {
+			height: 100%;
+			background-color: white;
+			padding: 20px;
+			.left-column {
+				width: 40%;
+				float: left;
+				display: inline-block;
+				border-right: 1px solid $line_color;
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					float: right;
+					li {
+						height: 26px;;
+						line-height: 26px;
+						font-family: $main_font;
+						font-weight: 100;
+						font-size: 16px;
+						padding-right: $center_line_length - 10;
+						transition: background-color .2s;
+						&:hover {
+							background-color: lighten($main_focus_color, 30%);
+							// background-color: rgba(0,0,0,.05);
+						}
+						a {
+							transition: color .2s;
+							padding-left: 20px;
+						}
+						&:hover a {
+							color: #000;
+						}
+					}
+				}	
+			}
+			.right-column {
+				display: inline-block;
+				float: left;
+				width: 60%;
+				.image-wrapper {
+					left: $center_line_length;
+					position: relative;
+					.image {
+						width: 300px;
+						height: 210px;
+						top: 0;
+						left: 0;
+						position: absolute;
+						background-size: cover;
+					}
+				}
+			}
+		}
 	}
+}
+.image-panel {
+	height: 400px;
+	width: 96%;
+	margin: 0 auto;
+	// background-image : url('http://www.grandecor.ru/sites/default/files/articleinsert/img_9509.jpg');
+	// background-position: center;
+	// background-size: 100%;
+	// background-position-y : 390px;
 }
