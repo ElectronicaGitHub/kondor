@@ -80,7 +80,7 @@ header {
         background-position: center;
         margin-right: 5px; }
       header .wrapper .top-panel .content {
-        width: calc(100% - 130px);
+        width: calc(100% - 125px);
         float: left; }
         header .wrapper .top-panel .content .top {
           height: 60px;
@@ -124,21 +124,22 @@ header {
                 left: 0;
                 cursor: default; }
             header .wrapper .top-panel .content .bottom a.callback {
-              float: right;
               background-color: #ffcd34;
               font-family: "Effra";
               font-weight: 500;
               padding: 10px 15px;
               border-radius: 5px;
               margin-right: 30px;
-              transition: background-color 0.2s; }
+              transition: background-color 0.2s;
+              float: right;
+              margin-right: 0; }
               header .wrapper .top-panel .content .bottom a.callback:hover {
                 background-color: #ffc001; }
       header .wrapper .top-panel .misc {
         position: absolute;
         top: 0;
         right: 0;
-        margin: 15px 35px 0 0; }
+        margin: 15px 0px 0 0; }
         header .wrapper .top-panel .misc * {
           font-family: "ProximaNova";
           font-weight: 700; }

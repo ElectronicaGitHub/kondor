@@ -31,7 +31,7 @@ $(function () {
  			.addClass('last');
 
 		setTimeout(function () {
-	 		$('.image').not('.last').remove();
+	 		$('header .image').not('.last').remove();
 		}, duration);
  	});
 });
