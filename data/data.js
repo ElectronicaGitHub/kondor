@@ -5,6 +5,7 @@ module.exports = {
 			types : {
 				type1 : {
 					name : 'Складные',
+					full_name : 'Складные cтолы на заказ',
 					images : [
 						{ src : "/assets/cabinet.jpg", name : 'Какое то описание товара'},
 				    	{ src : "/assets/room.jpg", name : 'Какое то описание товара'}
@@ -12,6 +13,7 @@ module.exports = {
 				},
 				type2 : {
 					name : 'Хуядные',
+					full_name : 'Хуядные cтолы на заказ',
 					images : [
 						{ src : "/assets/kitchen2.jpg", name : 'Какое то описание товара'},
 				    	{ src : "/assets/kitchen.jpg", name : 'Какое то описание товара'}
@@ -19,6 +21,7 @@ module.exports = {
 				},
 				type3 : {
 					name : 'Пиздатые',
+					full_name : 'Пиздатые cтолы на заказ',
 					images : [
 						{ src : "/assets/room.jpg", name : 'Какое то описание товара'},
 				        { src : "/assets/stairs.jpg", name : 'Какое то описание товара'}
@@ -26,6 +29,7 @@ module.exports = {
 				},
 				type4 : {
 					name : 'Четкие',
+					full_name : 'Четкие cтолы на заказ',
 					images : [
 						{ src : "/assets/table.jpg", name : 'Какое то описание товара'},
 				        { src : "/assets/door.jpg", name : 'Какое то описание товара'},
@@ -156,22 +160,13 @@ module.exports = {
 		},
 		komody : {
 			name : 'Комоды',
-			types : {
-				type1 : {
-					name : 'type1',
-					images : [
-						{ src : "/assets/cabinet.jpg", name : 'Какое то описание товара'},
-				    	{ src : "/assets/room.jpg", name : 'Какое то описание товара'}
-					]
-				},
-				type2 : {
-					name : 'type2',
-					images : [
-						{ src : "/assets/kitchen2.jpg", name : 'Какое то описание товара'},
-				    	{ src : "/assets/kitchen.jpg", name : 'Какое то описание товара'}
-					]
-				}
-			}
+			full_name : 'Комоды на заказ',
+			images : [
+				{ src : "/assets/cabinet.jpg", name : 'Какое то описание товара'},
+		    	{ src : "/assets/room.jpg", name : 'Какое то описание товара'},
+				{ src : "/assets/kitchen2.jpg", name : 'Какое то описание товара'},
+		    	{ src : "/assets/kitchen.jpg", name : 'Какое то описание товара'}
+			]
 		}
 	}
 }

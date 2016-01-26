@@ -1,0 +1,17 @@
+<%- layout('base.ejs')%>
+<% block('title', 'Каталог товаров, мебель на заказ') -%>
+
+<link rel="stylesheet" href="/stylesheets/builded/tovar.css"/>
+
+<div class="container">
+
+	<div class="breadcrumbs">
+		<%for (var i = 0, ii = breadcrumbs.length; i < ii; i++) { %>
+			<a href="<%= breadcrumbs[i].url %>"><span><%= breadcrumbs[i].name %></span></a>
+		<% } %>
+	</div>
+	
+	<h1><%= current_goods_type.full_name %></h1>
+	<div class="image" style="background-image:url('<%= current_goods_type.images[0].src %>')"></div>	
+
+</div>
