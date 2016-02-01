@@ -111,13 +111,13 @@ var MISC = {
 	makeBreadCrumbs : function (categoryName, categorySlug, typeName, typeSlug) {
 		if (arguments.length == 4) {
 			return [
-				{ name : 'Каталог', url : '/tovary' }, 
+				{ name : 'Каталог товаров', url : '/tovary' }, 
 				{ name : categoryName, url : '/tovary/' + categorySlug },
 				{ name : typeName, url : '/tovary/' + categorySlug + '/' + typeSlug }
 			]
 		} else if (arguments.length == 2) {
 			return [
-				{ name : 'Каталог', url : '/tovary' }, 
+				{ name : 'Каталог товаров', url : '/tovary' }, 
 				{ name : categoryName, url : '/tovary/' + categorySlug }
 			]
 		}

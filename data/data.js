@@ -6,9 +6,12 @@ module.exports = {
 				type1 : {
 					name : 'Складные',
 					full_name : 'Складные cтолы на заказ',
+					description : 'Эти замечательные складные столы из любых сортов древесины идеально дополнят вашу кухню, гостинную или кабинет.',
 					images : [
 						{ src : "/assets/cabinet.jpg", name : 'Какое то описание товара'},
-				    	{ src : "/assets/room.jpg", name : 'Какое то описание товара'}
+				    	{ src : "/assets/room.jpg", name : 'Какое то описание товара'},
+						{ src : "/assets/kitchen2.jpg", name : 'Какое то описание товара'},
+				        { src : "/assets/stairs.jpg", name : 'Какое то описание товара'}
 					]
 				},
 				type2 : {

@@ -1,24 +1,26 @@
 @import "main";
 
+$header_color: #f5f5f5;
+// $header_color: #a4a4a4;
 $header_height: 120px;
 $dd_height: 250px;
 $center_line_length : 100px;
 $line_color : #e3e3e3;
 
 header {
+	position: relative;
+	width: 100%;
+	height: $header_height;
+	background-color: $header_color;
 	&.dropped {
 		// .wrapper {
 		// }
 		.slider-drop-down {
 			height: $dd_height;
-			border-top: 1px solid $line_color;
-			border-bottom: 1px solid $line_color;
+			// border-top: 1px solid $line_color;
+			// border-bottom: 1px solid $line_color;
 		}
 	}
-	position: relative;
-	width: 100%;
-	height: $header_height;
-	background-color: $header_color;
 	.wrapper {
 		position: relative;
 		transition: border-bottom .3s;
@@ -26,12 +28,11 @@ header {
 		.top-panel {
 			position: relative;
 			height: $header_height;
-			background-color: $header_color;
+			// background-color: $header_color;
 			z-index: 5;
 			.logo {
 				width: $header_height;
 				height: $header_height;
-				background: white;
 				float: left;
 				background-image: url('/assets/logo-text-no-line.png');
 				background-size: contain;
@@ -57,21 +58,26 @@ header {
 					margin-top: 5px;
 					a {
 						float: left;
-						@include default-button();
+						@include default-button($header_color);
 						&.main-focus {
 							position: relative;
 							@include default-button($main_focus_color);
+							&:hover .menu-helper {
+								display: initial;
+							}
 							.menu-helper {
+								display: none;
 								height: 40px;
 								width: 100%;
 								position: absolute;
-								bottom: -40;
+								bottom: -40px;
 								left: 0;
 								cursor: default;
 							}
 						}
 						&.callback {
-							@include default-button($super_focus_color);
+							@include default-button(darken(#0FCF49, 5%));
+							color: white;
 							float: right;
 							margin-right: 0;
 						}
@@ -105,14 +111,32 @@ header {
 		width: 100%;
 		z-index: 2;
 		position: absolute;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
-		transition: height .5s, border-top .2s, border-bottom .2s, top .2s;
+		// border-top: 1px solid white;
+		// border-bottom: 1px solid white;
+		transition: height .5s, top .2s;
 		overflow: hidden;
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $line_color;
+			content: '';
+		}
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $line_color;
+			content: '';
+		}
 		&:hover {
 			height: $dd_height;
-			border-top: 1px solid $line_color;
-			border-bottom: 1px solid $line_color;
+			// border-top: 1px solid $line_color;
+			// border-bottom: 1px solid $line_color;
 		}
 		.menu-wrapper {
 			height: 100%;
