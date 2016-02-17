@@ -38,9 +38,35 @@ html a {
 	text-decoration: none;
 }
 
-.container {
-	max-width: 960px;
-	margin: 0 auto;
+$small: 320px;
+$middle : 550px;
+$picker_2col_min : 550px;
+$medium : 768px;
+$large: 1024px;
+$big: 1200px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == mobile-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $middle) { @content; }
+  }
+  @else if $media == picker-ok {
+    @media only screen and (min-width: $picker_2col_min) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == under-768 {
+    @media only screen and (min-width: $small) and (max-width: $medium - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large) and (max-width: $big - 1) { @content; }
+  }
+  @else if $media == extra-screens {
+  	@media only screen and (min-width: $big) { @content; }	
+  }
 }
 
 @mixin default-button($color:#fff) {
@@ -51,7 +77,64 @@ html a {
 	border-radius: 5px;
 	margin-right: 30px;
 	transition: background-color 0.2s;
+	@include respond-to(handhelds) { padding: 5px 10px; margin-right: 15px; }
+	@include respond-to(medium-screens) { padding: 5px 10px; margin-right: 15px; }
+	@include respond-to(mobile-screens) { padding: 5px 10px; margin-right: 15px; }
 	&:hover {
 		background-color: darken($color, 10%);
+	}
+}
+
+.interiors {
+	margin: 20px auto 10px auto;
+	overflow: hidden;
+	h2 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.each-interior {
+		position: relative;
+		// width: 50%;
+		padding: 0 20px;
+		// float: left;
+		.item {
+			img {
+				display: block;
+			    width: 100%;
+			}
+		}
+		.title {
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			z-index: 9999;
+			@include respond-to(handhelds) { top: 35%; }
+
+			span {
+				font-weight: 700;
+				font-size: 30px;
+				color: white;
+				@include respond-to(handhelds) { font-size: 25px; }
+			}
+		}
+		.owl-controls {
+			position: relative;
+			top: -40px;
+			.owl-page {
+				&.active {
+					span {
+						background: $main_focus_color;
+						opacity: 1;
+
+					}
+				}
+				span {
+					opacity: .8;
+					background: white;
+				}
+			}
+		}
 	}
 }

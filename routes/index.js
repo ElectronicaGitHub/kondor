@@ -5,15 +5,35 @@ module.exports = function (express) {
 
 
 	router.get('/', function (req, res, next) {
-		res.render('main');
+		res.render('main' , {
+			interiors : data.interiors
+		});
+	});
+
+	router.get('/interior/:category', function (req, res, next) {
+		var d = JSON.parse(JSON.stringify(data));
+
+		var _category = req.params.category;
+
+		var current_goods = d.interiors[_category];
+		if (current_goods) {
+
+			console.log(current_goods);
+
+			res.render('tovar', {
+				all_goods : d.tovary,
+				current_goods : current_goods,
+				current_goods_type : current_goods,
+				breadcrumbs : ''
+			});
+		} else res.redirect('/');
 	});
 
 	// получение карточки товара не имеющего типа
 	router.get('/tovar/:category', function (req, res, next) {
 		var d = JSON.parse(JSON.stringify(data));
 
-		var _category = req.params.category; 
-
+		var _category = req.params.category;
 		var current_goods = d.tovary[_category];
 
 		console.log(current_goods);
@@ -33,7 +53,7 @@ module.exports = function (express) {
 	router.get('/tovar/:category/:type', function (req, res, next) {
 		var d = JSON.parse(JSON.stringify(data));
 
-		var _category = req.params.category; 
+		var _category = req.params.category;
 		var _type = req.params.type;
 
 		var current_goods = d.tovary[_category];

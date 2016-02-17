@@ -8,6 +8,8 @@
 	<div class="good-image">
 		<div class="good-title"></div>
 	</div>
+
+	<h2>Каталог мебели</h2>	
 	
 	<div class="left-panel">
 		<ul>
@@ -75,21 +77,32 @@
 			<% } else { %> <!-- endif -->
 				<!-- ОТОБРАЖЕНИЕ ТОВАРА БЕЗ ТИПОВ -->
 				<div class="images-container">
-						<% var n = 0; for (var j in current_goods.images) { %>
-							<div class="cell">
-								<a href="<%= each_goods_url %>#<%= ++n %>">
-									<div class="goods-image-wrapper">
-										<div class="image" style="background-image:url('<%= current_goods.images[j].src %>')"></div>
-										<div class="image-label"><%= current_goods.images[j].name %></div>
-									</div>
-								</a>
-							</div>
-						<% } %>
-					</div>
+					<% var n = 0; for (var j in current_goods.images) { %>
+						<div class="cell">
+							<a href="<%= each_goods_url %>#<%= ++n %>">
+								<div class="goods-image-wrapper">
+									<div class="image" style="background-image:url('<%= current_goods.images[j].src %>')"></div>
+									<div class="image-label"><%= current_goods.images[j].name %></div>
+								</div>
+							</a>
+						</div>
+					<% } %>
+				</div>
 			<% } %> 
 		<% } else { %> <!-- endelse -->
 			<!-- БЛАНКОВЫЙ КАТАЛОГ -->
-			
+			<div class="images-container">
+				<% var n = 0; for (var j in all_goods) { %>
+					<div class="cell">
+						<a href="/tovary/<%= j %>">
+							<div class="goods-image-wrapper">
+								<div class="image" style="background-image:url('<%= all_goods[j].image.src %>')"></div>
+								<div class="image-label"><%= all_goods[j].name %></div>
+							</div>
+						</a>
+					</div>
+				<% } %>
+			</div>
 
 		<% } %> 
 	</div>

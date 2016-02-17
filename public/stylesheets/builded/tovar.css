@@ -50,15 +50,56 @@ html * {
 html a {
   text-decoration: none; }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto; }
+.interiors {
+  margin: 20px auto 10px auto;
+  overflow: hidden; }
+  .interiors h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+  .interiors .each-interior {
+    position: relative;
+    padding: 0 20px; }
+    .interiors .each-interior .item img {
+      display: block;
+      width: 100%; }
+    .interiors .each-interior .title {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 9999; }
+      @media only screen and (max-width: 320px) {
+        .interiors .each-interior .title {
+          top: 35%; } }
+      .interiors .each-interior .title span {
+        font-weight: 700;
+        font-size: 30px;
+        color: white; }
+        @media only screen and (max-width: 320px) {
+          .interiors .each-interior .title span {
+            font-size: 25px; } }
+    .interiors .each-interior .owl-controls {
+      position: relative;
+      top: -40px; }
+      .interiors .each-interior .owl-controls .owl-page.active span {
+        background: #FFB23F;
+        opacity: 1; }
+      .interiors .each-interior .owl-controls .owl-page span {
+        opacity: .8;
+        background: white; }
 
 .goods-container {
   overflow: hidden; }
 
 .breadcrumbs {
   margin-top: 30px; }
+  @media only screen and (max-width: 320px) {
+    .breadcrumbs {
+      padding: 0 20px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .breadcrumbs {
+      padding: 0 20px; } }
   .breadcrumbs a:hover {
     color: #FFB23F; }
   .breadcrumbs .icon {
@@ -71,10 +112,26 @@ html a {
 .product-card {
   margin-top: 40px;
   overflow: hidden; }
+  @media only screen and (max-width: 320px) {
+    .product-card {
+      margin-top: 20px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .product-card {
+      margin-top: 20px; } }
   .product-card .left {
     float: left;
     width: 65%;
     padding-right: 30px; }
+    @media only screen and (max-width: 320px) {
+      .product-card .left {
+        width: 100%;
+        float: none;
+        padding: 0 10px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .product-card .left {
+        width: 100%;
+        float: none;
+        padding: 0 10px; } }
     .product-card .left .main-image {
       width: 100%;
       height: 400px;
@@ -100,12 +157,34 @@ html a {
     padding: 0 20px;
     float: left;
     width: 35%; }
-    .product-card .right .title {
+    @media only screen and (max-width: 320px) {
+      .product-card .right {
+        width: 100%;
+        float: none;
+        padding: 20px; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .product-card .right {
+        width: 100%;
+        float: none;
+        padding: 20px; } }
+    .product-card .right .info .title {
       margin: 0;
       padding: 0;
       font-size: 25px; }
-    .product-card .right .description {
+      @media only screen and (max-width: 320px) {
+        .product-card .right .info .title {
+          margin-bottom: 20px; } }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .product-card .right .info .title {
+          margin-bottom: 20px; } }
+    .product-card .right .info .description {
       color: #555;
       margin-bottom: 0; }
+      @media only screen and (max-width: 320px) {
+        .product-card .right .info .description {
+          margin-bottom: 10px; } }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .product-card .right .info .description {
+          margin-bottom: 10px; } }
 
 /*# sourceMappingURL=tovar.css.map */

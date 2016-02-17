@@ -50,15 +50,50 @@ html * {
 html a {
   text-decoration: none; }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto; }
+.interiors {
+  margin: 20px auto 10px auto;
+  overflow: hidden; }
+  .interiors h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+  .interiors .each-interior {
+    position: relative;
+    padding: 0 20px; }
+    .interiors .each-interior .item img {
+      display: block;
+      width: 100%; }
+    .interiors .each-interior .title {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 9999; }
+      @media only screen and (max-width: 320px) {
+        .interiors .each-interior .title {
+          top: 35%; } }
+      .interiors .each-interior .title span {
+        font-weight: 700;
+        font-size: 30px;
+        color: white; }
+        @media only screen and (max-width: 320px) {
+          .interiors .each-interior .title span {
+            font-size: 25px; } }
+    .interiors .each-interior .owl-controls {
+      position: relative;
+      top: -40px; }
+      .interiors .each-interior .owl-controls .owl-page.active span {
+        background: #FFB23F;
+        opacity: 1; }
+      .interiors .each-interior .owl-controls .owl-page span {
+        opacity: .8;
+        background: white; }
 
 footer {
   height: 300px;
   width: 100%;
   background-color: #f5f5f5;
-  margin-top: 100px; }
+  margin-top: 50px; }
   footer .container {
     text-align: center;
     padding-top: 80px; }

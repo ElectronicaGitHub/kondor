@@ -12,6 +12,10 @@ header {
 	width: 100%;
 	height: $header_height;
 	background-color: $header_color;
+
+	@include respond-to(handhelds) { height: initial; }
+	@include respond-to(under-768) { height: initial; }
+
 	&.dropped {
 		// .wrapper {
 		// }
@@ -21,7 +25,61 @@ header {
 			// border-bottom: 1px solid $line_color;
 		}
 	}
+	.mini-wrapper {
+		display: none;
+		text-align: center;
+		overflow: hidden;
+		@include respond-to(handhelds) { display: initial; }
+		@include respond-to(under-768) { display: initial; }
+		.logo {
+			padding: 20px 0;
+			img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+		.top {
+			margin: 10px 0;
+			a {
+				display: inline-block;
+				width: 50%;
+				height: 25px;
+				line-height: 25px;
+				float: left;
+				font-weight: 300;
+				text-decoration: underline;
+			}
+		}
+		.bottom {
+			margin: 30px 0;
+			a {
+				display: inline-block;
+				width: 100%;
+				font-size: 15px;
+				height: 35px;
+				line-height: 35px;
+				&.main-focus {
+					span {
+						padding: 5px 10px;
+						background: $main_focus_color;
+						border-radius: 5px;
+						border: none;
+					}
+				}
+				&.callback {
+					span {
+						padding: 5px 10px;
+						background: $call_color;
+						border-radius: 5px;
+						border: none;
+					}
+				}
+			}
+		}
+	}
 	.wrapper {
+		@include respond-to(handhelds) { display: none; }
+		@include respond-to(under-768) { display: none; }
 		position: relative;
 		transition: border-bottom .3s;
 		z-index: 10;

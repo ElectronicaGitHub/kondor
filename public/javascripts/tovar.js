@@ -7,7 +7,7 @@ $(function () {
 			
 
 	(function init () {
-		current_image = Number(window.location.hash[1]) - 1;
+		current_image = Number(window.location.hash[1]) - 1 || 0;
 		image_container.css({
 			'background-image' : 'url(' + images[current_image].src + ')'
 		});
