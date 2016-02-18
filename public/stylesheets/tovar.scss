@@ -43,6 +43,8 @@ $right_width : 100% - $left_width;
 			height: 400px;
 			background-position: center;
 			background-size: cover;
+			@include respond-to(handhelds) { height : 200px; }
+			@include respond-to(under-768) { height : 300px; }
 		}
 		.mini-images-container {
 			text-align: center;

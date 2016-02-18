@@ -89,4 +89,10 @@ html a {
         opacity: .8;
         background: white; }
 
+.misc-container {
+  padding: 40px 0;
+  font-weight: 300; }
+  .misc-container h3 {
+    font-weight: 500; }
+
 /*# sourceMappingURL=main.css.map */

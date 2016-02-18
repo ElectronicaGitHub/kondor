@@ -10,6 +10,10 @@ module.exports = function (express) {
 		});
 	});
 
+	router.get('/about', function (req, res, next) {
+		res.render('about');
+	});
+
 	router.get('/interior/:category', function (req, res, next) {
 		var d = JSON.parse(JSON.stringify(data));
 
