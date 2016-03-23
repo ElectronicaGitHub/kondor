@@ -10,8 +10,16 @@ module.exports = function (express) {
 		});
 	});
 
+	router.get('/materials', function (req, res, next) {
+		res.render('materials');
+	});
+
 	router.get('/about', function (req, res, next) {
 		res.render('about');
+	});
+
+	router.get('/dostavka', function (req, res, next) {
+		res.render('dostavka');
 	});
 
 	router.get('/interior/:category', function (req, res, next) {

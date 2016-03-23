@@ -1,0 +1,9 @@
+@import "main";
+
+.materials {
+	margin-top: 20px;
+	> div {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}

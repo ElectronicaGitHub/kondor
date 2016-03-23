@@ -57,11 +57,14 @@ html a {
     text-align: center;
     margin-bottom: 40px; }
   .interiors .each-interior {
-    position: relative;
-    padding: 0 20px; }
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+    overflow: hidden; }
     .interiors .each-interior .item img {
       display: block;
-      width: 100%; }
+      width: 100%;
+      height: 250px; }
     .interiors .each-interior .title {
       position: absolute;
       top: 40%;
@@ -87,7 +90,10 @@ html a {
         opacity: 1; }
       .interiors .each-interior .owl-controls .owl-page span {
         opacity: .8;
-        background: white; }
+        background: white;
+        width: 8px;
+        height: 8px;
+        margin: 4px 3px; }
 
 .misc-container {
   padding: 40px 0;

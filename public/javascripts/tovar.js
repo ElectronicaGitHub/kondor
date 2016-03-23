@@ -19,7 +19,7 @@ $(function () {
 		$('.' + mini_image_class).removeClass('faded');
 		var n = $(this).attr('data-n');
 		image_container.css({
-			'background-image' : 'url(' + images[n].src + ')'
+			'background-image' : 'url("' + images[n].src + '")'
 		});
 		$(this).addClass('faded');
 	});
@@ -27,11 +27,11 @@ $(function () {
 	function createImages() {
 		for (var i in images) {
 			var bl = $('<div/>').addClass(mini_image_class).css({
-				'background-image' : 'url(' + images[i].src + ')'
+				'background-image' : 'url("' + images[i].src + '")'
 			}).attr('data-n', i).appendTo(mini_images_container);
 			if (i == current_image) {
 				bl.addClass('faded');
 			}
 		}
 	}
-})
+});

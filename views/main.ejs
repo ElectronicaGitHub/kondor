@@ -14,18 +14,22 @@
 	<h2>Каталог мебели на заказ</h2>
 	
 	<% for (var i in interiors) { %>
-		<div class="each-interior col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<div class="owl-carousels">
-				<% for (var j = 0, jj = interiors[i].images.length; j < jj; j++) { %>
-				<a href="/interior/<%= i %>"><div class="item">
-					<img src="<%= interiors[i].images[j].src %>" alt="<%= interiors[i].images[j].name %>">
-				</div></a>
-				<% } %>
+		<a href="/interior/<%= i %>">
+			<div class="each-interior col-xs-12">
+			<!-- <div class="each-interior col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+				<div class="owl-carousels">
+					<% var jj = interiors[i].images.length < 10 ? interiors[i].images.length : 10; %>
+					<% for (var j = 0; j < jj; j++) { %>
+						<div class="item">
+							<img src="<%= interiors[i].images[j].src %>" alt="<%= interiors[i].images[j].name %>">
+						</div>
+					<% } %>
+				</div>
+				<div class="title">
+					<span><%= interiors[i].name %></span>
+				</div>
 			</div>
-			<div class="title">
-				<span><%= interiors[i].name %></span>
-			</div>
-		</div>
+		</a>
 	<% } %>
 
 </div>
