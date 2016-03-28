@@ -3,14 +3,22 @@ $(function () {
 	var image_container = $('.main-image');
 	var mini_images_container = $('.mini-images-container');
 	var mini_image_class = 'mini-image';
-	var current_image;
-
+	var current_image, owl;
 	(function init () {
 		current_image = Number(window.location.hash[1]) - 1 || 0;
-		image_container.css({
-			'background-image' : 'url("' + images[current_image].src + '")'
-		});
 		createImages();
+
+		owl = $(".owl-carousels-tovar").owlCarousel({
+			dotsSpeed : 400,
+			items : 1,
+			smartSpeed : 250,
+			startPosition : current_image,
+			dotsContainer : $('.main-image .dots-nav')
+		}).on('changed.owl.carousel', function(property) {
+		    var current = property.item.index;
+			$('.' + mini_image_class).removeClass('faded');
+		    $('.' + mini_image_class).eq(current).addClass('faded');
+		});
 	})();
 
 	$(document).on('click', '#offer-button', function (e) {
@@ -37,9 +45,8 @@ $(function () {
 		if ($(this).hasClass('faded')) return false;
 		$('.' + mini_image_class).removeClass('faded');
 		var n = $(this).attr('data-n');
-		image_container.css({
-			'background-image' : 'url("' + images[n].src + '")'
-		});
+		// owl.to(n);
+		owl.trigger('to.owl.carousel', n);
 		$(this).addClass('faded');
 	});
 

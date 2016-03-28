@@ -85,10 +85,10 @@ html a {
     .interiors .each-interior .owl-controls {
       position: relative;
       top: -40px; }
-      .interiors .each-interior .owl-controls .owl-page.active span {
+      .interiors .each-interior .owl-controls .owl-dot.active span {
         background: #FFB23F;
         opacity: 1; }
-      .interiors .each-interior .owl-controls .owl-page span {
+      .interiors .each-interior .owl-controls .owl-dot span {
         opacity: .8;
         background: white;
         width: 8px;

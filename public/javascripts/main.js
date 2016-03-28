@@ -12,8 +12,8 @@ $(function () {
 	});
 
 	$(".owl-carousels").owlCarousel({
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		singleItem:true
+		dotsSpeed : 400,
+		items : 1,
+		smartSpeed : 250
   	});
 });

@@ -41,6 +41,7 @@ html a {
 $small: 320px;
 $middle : 550px;
 $picker_2col_min : 550px;
+$medium_plus : 992px;
 $medium : 768px;
 $large: 1024px;
 $big: 1200px;
@@ -54,6 +55,9 @@ $big: 1200px;
   }
   @else if $media == picker-ok {
     @media only screen and (min-width: $picker_2col_min) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == 768-992 {
+    @media only screen and (min-width: $medium) and (max-width: $medium_plus - 1) { @content; }
   }
   @else if $media == medium-screens {
     @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
@@ -124,7 +128,7 @@ $big: 1200px;
 		.owl-controls {
 			position: relative;
 			top: -40px;
-			.owl-page {
+			.owl-dot {
 				&.active {
 					span {
 						background: $main_focus_color;

@@ -20,7 +20,19 @@
 	
 	<div class="product-card">
 		<div class="left">
-			<div class="main-image" style="background-image:url('<%= current_goods_type.images[0].src %>')"></div>
+			<!-- <div class="main-image" style="background-image:url('<%= current_goods_type.images[0].src %>')"></div> -->
+			<div class="main-image">
+				<div class="owl-carousels-tovar">
+					<% var jj = current_goods_type.images.length; %>
+					<% for (var j = 0; j < jj; j++) { %>
+						<div class="item">
+							<img src="<%= current_goods_type.images[j].src %>" alt="<%= current_goods_type.images[j].name %>">
+						</div>
+					<% } %>
+				</div>
+				<div class="dots-nav"></div>
+			</div>
+
 			<div class="mini-images-container"></div>
 		</div>
 		<div class="right">
