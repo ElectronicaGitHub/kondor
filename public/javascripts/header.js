@@ -21,7 +21,6 @@ $(function () {
  		$('.last').removeClass('last');
  		var self = this, slide = $(self).closest('.menu').find('*[class*=-slide]'),
  			type = $(this).attr('data-goods-type');
- 			console.log(type, header_slides[type]);
 		var img = $('<div/>').addClass('image').css({
 	 			'background-image' : 'url("' + header_slides[type].src + '")',
 	 			opacity : 0
