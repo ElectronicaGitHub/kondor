@@ -1,5 +1,18 @@
 var data = require('../data/data.js');
 
+var newCallbackTmpl = require('../mailTemplate/newCallback.js');
+var newCommentTmpl = require('../mailTemplate/newComment.js');
+
+// почтовая залупа
+var nodemailer = require('nodemailer');
+var mandrillTransport = require('nodemailer-mandrill-transport');
+var transport = nodemailer.createTransport(mandrillTransport({
+	auth: {
+		apiKey: '4Xj9PqPRZMf48cOOLBohIg'
+	}
+}));
+
+
 module.exports = function (express) {
 	var router = express.Router();
 
@@ -20,6 +33,10 @@ module.exports = function (express) {
 
 	router.get('/dostavka', function (req, res, next) {
 		res.render('dostavka');
+	});
+
+	router.get('/comments', function (req, res, next) {
+		res.render('comments');
 	});
 
 	router.get('/interior/:category', function (req, res, next) {
@@ -135,6 +152,65 @@ module.exports = function (express) {
 			});
 		} else res.redirect('/');
 	});
+
+	router.post('/create_callback', function (req, res, next) {
+
+		var body = req.body;
+
+		console.log(body);
+
+		transport.sendMail({
+			from : "antonovphilipdev@gmail.com",
+			to: "molo4nik11@gmail.com",
+			subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Перезвонить надо еба)',
+			html: newCallbackTmpl(body)
+		}, function (err, info) {
+			if (err) callback(err);
+
+			res.json({
+				message : 'ok'
+			});
+			
+			transport.sendMail({
+				from : "antonovphilipdev@gmail.com",
+				to: "vladimirnovikovski@gmail.com",
+				subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Перезвонить надо еба)',
+				html: newCallbackTmpl(body)
+			}, function (err, info) {
+				if (err) callback(err);
+			});
+		});
+	});
+
+	router.post('/create_comment', function (req, res, next) {
+
+		var body = req.body;
+
+		console.log(body);
+
+		transport.sendMail({
+			from : "antonovphilipdev@gmail.com",
+			to: "molo4nik11@gmail.com",
+			subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Новый комментарий =)))',
+			html: newCommentTmpl(body)
+		}, function (err, info) {
+			if (err) callback(err);
+
+			res.json({
+				message : 'ok'
+			});
+			
+			transport.sendMail({
+				from : "antonovphilipdev@gmail.com",
+				to: "vladimirnovikovski@gmail.com",
+				subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Новый комментарий =)))',
+				html: newCommentTmpl(body)
+			}, function (err, info) {
+				if (err) callback(err);
+			});
+		});
+	});
+
 
 	return router;
 }

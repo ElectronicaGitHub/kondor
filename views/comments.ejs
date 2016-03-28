@@ -1,0 +1,24 @@
+<%- layout('base.ejs')%>
+<% block('title', 'Кондор мебель | Отзывы') -%>
+
+<link rel="stylesheet" href="/stylesheets/builded/comments.css"/>
+<script src="/javascripts/comments.js"></script>
+
+<div class="container">
+	<div class="new-comment">
+		<form class="comment-form">
+          <fieldset class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" class="form-control" id="name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="comment">Ваш комментарий</label>
+            <input type="text" name="comment" class="form-control" class="comment" id="comment">
+          </fieldset>
+          <button class="btn btn-apply" id="create_comment">Оставить комментарий</button>
+          <div class="after-action">Спасибо за участие, Ваш комментарий оставлен, через некоторое время он появится на сайте.</div>
+          <div class="no-more-comments">Вы уже оставляли комментарий, спасибо.</div>
+        </form>
+	</div>
+</div>
+

@@ -1,0 +1,27 @@
+<script src="/javascripts/callback-modal.js"></script>
+<link rel="stylesheet" href="/stylesheets/builded/callback-modal.css"> 
+
+<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title" id="myModalLabel">Заказ звонка</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" class="form-control" id="name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" class="form-control" class="phone" id="phone">
+          </fieldset>
+          <button class="btn btn-apply" id="create_callback">Заказать звонок</button>
+          <div class="mark">Ваша заявка отправлена, в течение 10 минут мы свяжемся с вами.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

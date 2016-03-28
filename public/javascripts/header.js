@@ -34,4 +34,10 @@ $(function () {
 	 		$('header .image').not('.last').remove();
 		}, duration);
  	});
+
+ 	$('.js-init-callbackmodal').on('click', function (e) {
+ 		e.preventDefault();
+
+ 		$('#callbackModal').modal('show');
+ 	})
 });
