@@ -2,6 +2,12 @@
 
 .materials {
 	margin-top: 20px;
+	.title {
+		padding: 20px 30px;
+		font-size: 15px;
+		background: #f1f1f1;
+		text-align: justify;
+	}
 	> div {
 		margin-bottom: 20px;
 		text-align: center;

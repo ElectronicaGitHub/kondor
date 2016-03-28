@@ -36,11 +36,15 @@
 		</ul>
 	</div>
 	<div class="right-panel">
+
 		<!-- КАТЕГОРИЯ /ТОВАР/ТИП -->
 		<% if (current_goods_type) { %>
 
 			<% block('title', current_goods_type.seo.title) -%>
 			<% block('description', current_goods_type.seo.description) -%>
+
+			<p class="goods-title"><%= current_goods_type.name %></p>
+			<p class="goods-description"><%= current_goods_type.description %></p>
 
 			<div class="images-container">
 				<% var n = 0; for (var j in current_goods_type.images) { %>
@@ -59,26 +63,28 @@
 
 			<% block('title', current_goods.seo.title) -%>
 			<% block('description', current_goods.seo.description) -%>
+
+			<p class="goods-title"><%= current_goods.name %></p>
+			<p class="goods-description"><%= current_goods.description %></p>
 				
 			<% if (current_goods.types) { %>
 				<!-- ОТОБРАЖЕНИЕ ТОВАРА С ТИПАМИ -->
-				<% for (var i in current_goods.types) { %>
-					<% var g = current_goods.types[i]; %>
-					<div class="images-container">
-						<% var n = 0; for (var j in g.images) { %>
-							<div class="cell">
-								<a href="<%= each_goods_url %>/<%= i %>#<%= ++n %>">
-									<div class="goods-image-wrapper">
-										<div class="image" style="background-image:url('<%= g.images[j].src %>')"></div>
-										<div class="image-label"><%= g.images[j].name %></div>
-									</div>
-								</a>
-							</div>
-						<% } %>
-					</div>
-				<% } %> <!-- endfor -->
+				<div class="images-container">
+					<% var n = 0; for (var i in current_goods.images) { %>
+					<% var g = current_goods.images[i]; %>
+						<div class="cell">
+							<a href="<%= each_goods_url %>/<%= i %>#<%= ++n %>">
+								<div class="goods-image-wrapper">
+									<div class="image" style="background-image:url('<%= g.src %>')"></div>
+									<div class="image-label"><%= g.name %></div>
+								</div>
+							</a>
+						</div>
+					<% } %>
+				</div>
 			<% } else { %> <!-- endif -->
 				<!-- ОТОБРАЖЕНИЕ ТОВАРА БЕЗ ТИПОВ -->
+
 				<div class="images-container">
 					<% var n = 0; for (var j in current_goods.images) { %>
 						<div class="cell">
@@ -94,8 +100,8 @@
 			<% } %> 
 		<% } else { %> <!-- endelse -->
 
-			<% block('title', 'Каталог мебели компании Кондор') -%>
-			<% block('description', 'NONE') -%>
+			<% block('title', 'Каталог мебели компании "Кондор"') -%>
+			<% block('description', 'Мебель на заказ от компании "Кондор" витрины, ресепшн, кровати, обувницы, столешницы, столы, шкафы. Недорого Москва.') -%>
 
 			<!-- БЛАНКОВЫЙ КАТАЛОГ -->
 			<div class="images-container">

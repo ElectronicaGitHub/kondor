@@ -96,7 +96,7 @@ html a {
         margin: 4px 3px; }
 
 .misc-container {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-weight: 300; }
   .misc-container h3 {
     font-weight: 500; }
@@ -114,7 +114,7 @@ footer {
       font-weight: 100;
       vertical-align: top;
       padding: 0 15px 0 30px;
-      height: 150px; }
+      height: 130px; }
       @media only screen and (max-width: 320px) {
         footer .container div[class*=col] {
           text-align: center; } }

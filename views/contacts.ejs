@@ -1,0 +1,36 @@
+<%- layout('base.ejs')%>
+<% block('title', 'Кондор мебель | Контакты') -%>
+
+<link rel="stylesheet" href="/stylesheets/builded/contacts.css"/>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script>
+	window.onload = function () {
+		var coords = [55.837206776863106,37.45296499999991];
+		ymaps.ready(function () {
+			map = new ymaps.Map("map", {
+				center: coords,
+				zoom: 16,
+				type : 'yandex#map',
+				controls : []
+			});
+			myPlacemark = new ymaps.Placemark(coords, {}, {
+				preset: 'islands#icon',
+				iconColor: '#F34352'
+			});
+			map.geoObjects.add(myPlacemark);
+		});
+	}
+</script>
+
+<div class="container container-contacts">
+	<div>
+		<p>Наши телефоны:</p>
+		<p>8 (495) 928-44-84 - Офис продаж</p>
+		<p>8 (916) 495-71-62 - Производство</p>
+		<p>Электропочта:</p>
+		<p>condormebel@yandex.ru</p>
+		<p>Адрес: м. Сходненская, ул. Свободы д. 29, цокольный этаж</p>
+	</div>
+	<div class="map" id="map"></div>
+</div>

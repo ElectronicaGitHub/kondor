@@ -96,13 +96,18 @@ html a {
         margin: 4px 3px; }
 
 .misc-container {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-weight: 300; }
   .misc-container h3 {
     font-weight: 500; }
 
 .materials {
   margin-top: 20px; }
+  .materials .title {
+    padding: 20px 30px;
+    font-size: 15px;
+    background: #f1f1f1;
+    text-align: justify; }
   .materials > div {
     margin-bottom: 20px;
     text-align: center; }

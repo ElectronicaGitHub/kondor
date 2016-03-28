@@ -1,8 +1,22 @@
 var data = require('../data/data.js');
 
+var newRequestTmpl = require('../mailTemplate/newRequest.js');
+// почтовая залупа
+var nodemailer = require('nodemailer');
+var mandrillTransport = require('nodemailer-mandrill-transport');
+var transport = nodemailer.createTransport(mandrillTransport({
+	auth: {
+		apiKey: '4Xj9PqPRZMf48cOOLBohIg'
+	}
+}));
+
 module.exports = function (express) {
 	var router = express.Router();
 
+	router.use(function (req, res, next) {
+		res.locals.header_goods = data.tovary;
+		next();
+	});
 
 	router.get('/', function (req, res, next) {
 		res.render('main' , {
@@ -22,6 +36,10 @@ module.exports = function (express) {
 		res.render('dostavka');
 	});
 
+	router.get('/contacts', function (req, res, next) {
+		res.render('contacts');
+	});
+
 	router.get('/interior/:category', function (req, res, next) {
 		var d = JSON.parse(JSON.stringify(data));
 
@@ -36,7 +54,9 @@ module.exports = function (express) {
 				all_goods : d.tovary,
 				current_goods : current_goods,
 				current_goods_type : current_goods,
-				breadcrumbs : ''
+				breadcrumbs : [
+					{ name : 'Каталог товаров', url : '/' }
+				]
 			});
 		} else res.redirect('/');
 	});
@@ -134,6 +154,34 @@ module.exports = function (express) {
 				each_goods_url : '/tovar/' + _category + '/' + _type
 			});
 		} else res.redirect('/');
+	});
+
+	router.post('/create_offer', function (req, res, next) {
+
+		var body = req.body;
+
+		transport.sendMail({
+			from : "antonovphilipdev@gmail.com",
+			to: "molo4nik11@gmail.com",
+			subject: 'Поступил новый запрос)',
+			html: newRequestTmpl(body)
+		}, function (err, info) {
+			if (err) callback(err);
+
+			res.json({
+				message : 'ok'
+			});
+			
+			transport.sendMail({
+				from : "antonovphilipdev@gmail.com",
+				to: "vladimirnovikovski@gmail.com",
+				subject: 'Поступил новый запрос)',
+				html: newRequestTmpl(body)
+			}, function (err, info) {
+				if (err) callback(err);
+			});
+		});
+
 	});
 
 	return router;

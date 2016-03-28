@@ -96,7 +96,7 @@ html a {
         margin: 4px 3px; }
 
 .misc-container {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-weight: 300; }
   .misc-container h3 {
     font-weight: 500; }
@@ -106,6 +106,9 @@ header {
   width: 100%;
   height: 120px;
   background-color: #f5f5f5; }
+  header a:hover {
+    color: inherit;
+    text-decoration: none; }
   @media only screen and (max-width: 320px) {
     header {
       height: initial; } }
@@ -113,7 +116,7 @@ header {
     header {
       height: initial; } }
   header.dropped .slider-drop-down {
-    height: 250px; }
+    height: 190px; }
   header .mini-wrapper {
     display: none;
     text-align: center;
@@ -314,7 +317,7 @@ header {
       background-color: #e3e3e3;
       content: ''; }
     header .slider-drop-down:hover {
-      height: 250px; }
+      height: 190px; }
     header .slider-drop-down .menu-wrapper {
       height: 100%;
       background-color: white;
@@ -352,8 +355,8 @@ header {
           left: 100px;
           position: relative; }
           header .slider-drop-down .menu-wrapper .right-column .image-wrapper .image {
-            width: 300px;
-            height: 210px;
+            width: 228px;
+            height: 150px;
             top: 0;
             left: 0;
             position: absolute;

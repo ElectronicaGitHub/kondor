@@ -14,7 +14,7 @@ footer {
 			font-weight: 100;
 			vertical-align: top;
 			padding: 0 15px 0 30px;
-			height: 150px;
+			height: 130px;
 			@include respond-to(handhelds) { text-align: center; }
 			@include respond-to(under-768) { text-align: center; }
 			p {

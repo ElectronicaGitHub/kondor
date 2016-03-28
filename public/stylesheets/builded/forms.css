@@ -96,12 +96,13 @@ html a {
         margin: 4px 3px; }
 
 .misc-container {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-weight: 300; }
   .misc-container h3 {
     font-weight: 500; }
 
 .k-form {
+  margin-top: 15px;
   overflow: hidden; }
   .k-form.margin10 {
     margin-top: 10px; }
@@ -139,6 +140,8 @@ html a {
     .k-form .input-wrapper button {
       background-color: #ffc672;
       transition: border-color .3s; }
+      .k-form .input-wrapper button[disabled] {
+        background-color: #ffefd8; }
       .k-form .input-wrapper button:hover {
         border-color: #FFB23F; }
   .k-form .line {

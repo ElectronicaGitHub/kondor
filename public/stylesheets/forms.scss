@@ -1,6 +1,7 @@
 @import "main";
 
 .k-form {
+	margin-top: 15px;
 	overflow: hidden;
 	&.margin10 {
 		margin-top: 10px;
@@ -45,6 +46,9 @@
 		button {
 			background-color: lighten($main_focus_color, 10%);
 			transition: border-color .3s;
+			&[disabled] {
+				background-color: lighten($main_focus_color, 30%);
+			}
 			&:hover {
 				border-color: $main_focus_color;
 			}

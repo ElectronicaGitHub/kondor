@@ -96,7 +96,7 @@ html a {
         margin: 4px 3px; }
 
 .misc-container {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-weight: 300; }
   .misc-container h3 {
     font-weight: 500; }
@@ -197,12 +197,17 @@ html a {
           margin-bottom: 20px; } }
     .product-card .right .info .description {
       color: #555;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      margin-top: 10px; }
       @media only screen and (max-width: 320px) {
         .product-card .right .info .description {
           margin-bottom: 10px; } }
       @media only screen and (min-width: 320px) and (max-width: 767px) {
         .product-card .right .info .description {
           margin-bottom: 10px; } }
+    .product-card .right .k-form .after-offer-form {
+      background: #ffc672;
+      display: none;
+      padding: 10px 15px; }
 
 /*# sourceMappingURL=tovar.css.map */

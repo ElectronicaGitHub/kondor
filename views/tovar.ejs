@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href="/stylesheets/builded/tovar.css"/>
 <script src="/javascripts/tovar.js"></script>
+<script src="/javascripts/inputmask.js"></script>
 <script>
 	window.images = <%- JSON.stringify(current_goods_type.images) %>;
 </script>
@@ -32,20 +33,26 @@
 			</div>
 
 			<div class="k-form">
-				<div class="line"><span>позвоните нам</span></div>
-				<div class="tel"><span>+7 (495)</span> 782 13 98</div>
-				<div class="line"><span>или закажите звонок</span></div>
-				<div class="input-wrapper">
-					<span class="fa fa-user icon"></span>
-					<input type="text">
+				<div class="after-offer-form">
+					<span>Ваш заяка принята, в течение 30 минут мы свяжемся с вами для подтверждения заказа.</span>
 				</div>
-				<div class="input-wrapper">
-					<span class="fa fa-phone icon"></span>
-					<input type="text">
-				</div>
-				<div class="input-wrapper">
-					<button>Заказать</button>
-				</div>
+				<form class="offer-form">
+					<div class="line"><span>позвоните нам</span></div>
+					<div class="tel"><span>+7 (495)</span> 782 13 98</div>
+					<div class="line"><span>или закажите звонок</span></div>
+					<div class="input-wrapper">
+						<span class="fa fa-user icon"></span>
+						<input id="name" name="name" type="text">
+					</div>
+					<div class="input-wrapper">
+						<span class="fa fa-phone icon"></span>
+						<input id="phone" name="phone" type="text">
+					</div>
+					<input id="title" name="title" type="text" hidden="true" value="<%= current_goods_type.full_name %>">
+					<div class="input-wrapper">
+						<button disabled="true" id="offer-button">Заказать</button>
+					</div>
+				</form>
 			</div>
 
 		</div>
