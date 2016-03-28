@@ -11,9 +11,9 @@ $(function () {
 	    // overlay: '/libs/vegas/dist/overlays/07.png'
 	});
 
-	// $(".owl-carousels").owlCarousel({
-	// 	slideSpeed : 300,
-	// 	paginationSpeed : 400,
-	// 	singleItem:true
- //  	});
+	$(".owl-carousels").owlCarousel({
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+  	});
 });
