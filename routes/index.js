@@ -1,6 +1,9 @@
 var data = require('../data/data.js');
 
 var newRequestTmpl = require('../mailTemplate/newRequest.js');
+var newCallbackTmpl = require('../mailTemplate/newCallback.js');
+var newCommentTmpl = require('../mailTemplate/newComment.js');
+
 // почтовая залупа
 var nodemailer = require('nodemailer');
 var mandrillTransport = require('nodemailer-mandrill-transport');
@@ -38,6 +41,10 @@ module.exports = function (express) {
 
 	router.get('/contacts', function (req, res, next) {
 		res.render('contacts');
+	});
+
+	router.get('/comments', function (req, res, next) {
+		res.render('comments');
 	});
 
 	router.get('/interior/:category', function (req, res, next) {
@@ -138,7 +145,7 @@ module.exports = function (express) {
 		
 		var d = JSON.parse(JSON.stringify(data));
 
-		var _category = req.params.category; 
+		var _category = req.params.category;
 		var _type = req.params.type;
 
 		var current_goods = d.tovary[req.params.category];
@@ -163,7 +170,7 @@ module.exports = function (express) {
 		transport.sendMail({
 			from : "antonovphilipdev@gmail.com",
 			to: "molo4nik11@gmail.com",
-			subject: 'Поступил новый запрос)',
+			subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Поступил новый запрос =)))',
 			html: newRequestTmpl(body)
 		}, function (err, info) {
 			if (err) callback(err);
@@ -175,17 +182,75 @@ module.exports = function (express) {
 			transport.sendMail({
 				from : "antonovphilipdev@gmail.com",
 				to: "vladimirnovikovski@gmail.com",
-				subject: 'Поступил новый запрос)',
-				html: newRequestTmpl(body)
+				subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Поступил новый запрос =)))',
+				html: newRequestTmpl(body),
 			}, function (err, info) {
 				if (err) callback(err);
 			});
 		});
+	});
 
+	router.post('/create_callback', function (req, res, next) {
+
+		var body = req.body;
+
+		console.log(body);
+
+		transport.sendMail({
+			from : "antonovphilipdev@gmail.com",
+			to: "molo4nik11@gmail.com",
+			subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Перезвонить надо еба)',
+			html: newCallbackTmpl(body)
+		}, function (err, info) {
+			if (err) callback(err);
+
+			res.json({
+				message : 'ok'
+			});
+			
+			transport.sendMail({
+				from : "antonovphilipdev@gmail.com",
+				to: "vladimirnovikovski@gmail.com",
+				subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Перезвонить надо еба)',
+				html: newCallbackTmpl(body)
+			}, function (err, info) {
+				if (err) callback(err);
+			});
+		});
+	});
+
+
+	router.post('/create_comment', function (req, res, next) {
+
+		var body = req.body;
+
+		console.log(body);
+
+		transport.sendMail({
+			from : "antonovphilipdev@gmail.com",
+			to: "molo4nik11@gmail.com",
+			subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Новый комментарий =)))',
+			html: newCommentTmpl(body)
+		}, function (err, info) {
+			if (err) callback(err);
+
+			res.json({
+				message : 'ok'
+			});
+			
+			transport.sendMail({
+				from : "antonovphilipdev@gmail.com",
+				to: "vladimirnovikovski@gmail.com",
+				subject: 'К-К-КОНДОР МЕБЕЛЬ ||| Новый комментарий =)))',
+				html: newCommentTmpl(body)
+			}, function (err, info) {
+				if (err) callback(err);
+			});
+		});
 	});
 
 	return router;
-}
+};
 
 var MISC = {
 	makeBreadCrumbs : function (categoryName, categorySlug, typeName, typeSlug) {

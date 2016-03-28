@@ -15,17 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "MathJax": "~2.5.3",
-    "angular": "1.2.16",
-    "angular-route": "~1.2.21",
-    "angular-sanitize": "~1.4.1",
-    "angular-ui-tinymce": "~0.0.9",
-    "angular-ui-utils": "bower-keypress",
     "bootstrap": "~3.2.0",
-    "d3": "~3.5.6",
     "moment": "~2.10.3",
-    "tinymce": "~4.1.10",
-    "trumbowyg-ng": "~0.0.3",
     "font-awesome": "~4.4.0"
   }
 }

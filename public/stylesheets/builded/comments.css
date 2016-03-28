@@ -1,0 +1,10 @@
+.new-comment {
+  margin-top: 20px;
+  padding: 10px;
+  background: #e9e9e9; }
+  .new-comment .after-action, .new-comment .no-more-comments {
+    background: white;
+    padding: 10px;
+    display: none; }
+
+/*# sourceMappingURL=comments.css.map */

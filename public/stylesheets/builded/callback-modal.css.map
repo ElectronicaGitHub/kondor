@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,YAAM;EACL,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,IAAI",
+"sources": ["../callback-modal.scss"],
+"names": [],
+"file": "callback-modal.css"
+}
