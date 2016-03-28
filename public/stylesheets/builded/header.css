@@ -263,7 +263,7 @@ header {
               transition: background-color 0.2s;
               color: white;
               float: right;
-              margin-right: 0; }
+              margin-right: 0 !important; }
               @media only screen and (max-width: 320px) {
                 header .wrapper .top-panel .content .bottom a.callback {
                   padding: 5px 10px;
@@ -281,7 +281,7 @@ header {
       header .wrapper .top-panel .misc {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 15px;
         margin: 15px 0px 0 0; }
         header .wrapper .top-panel .misc * {
           font-family: "ProximaNova";

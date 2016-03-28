@@ -140,7 +140,7 @@ header {
 							@include default-button(darken(#0FCF49, 5%));
 							color: white;
 							float: right;
-							margin-right: 0;
+							margin-right: 0 !important;
 						}
 					}
 				}
@@ -148,7 +148,7 @@ header {
 			.misc {
 				position: absolute;
 				top: 0;
-				right: 0;
+				right: 15px;
 				margin: 15px 0px 0 0;
 				* {
 					font-family: $secondary_font;
