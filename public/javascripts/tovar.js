@@ -54,7 +54,7 @@ $(function () {
 		}
 	}
 
-	$("#phone").inputmask("+9 (999) 999 99 99", {
+	$(".k-form #phone").inputmask("+9 (999) 999 99 99", {
 		oncomplete: function() {
 			$('#offer-button').attr('disabled', false);
 		}, 
@@ -63,5 +63,5 @@ $(function () {
 		}
 	}).on('input', function () {
 		$('#offer-button').attr('disabled', true);		
-	})
+	});
 });

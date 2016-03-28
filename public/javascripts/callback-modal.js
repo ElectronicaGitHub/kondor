@@ -13,8 +13,19 @@ $(function () {
 			btn.hide(0);
 			$('.mark').show(0);
 			setTimeout(function () {
-		 		$('#callbackModal').modal('hide');
-		 	}, 600);
+				$('#callbackModal').modal('hide');
+			}, 1500);
 		});
+	});
+
+	$(".modal #phone").inputmask("+9 (999) 999 99 99", {
+		oncomplete: function() {
+			$('#create_callback').attr('disabled', false);
+		},
+		onincomplete: function () {
+			$('#create_callback').attr('disabled', true);
+		}
+	}).on('input', function () {
+		$('#create_callback').attr('disabled', true);
 	});
 });
