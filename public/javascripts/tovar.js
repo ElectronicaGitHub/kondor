@@ -7,9 +7,11 @@ $(function () {
 
 	(function init () {
 		current_image = Number(window.location.hash[1]) - 1 || 0;
+		console.log(current_image);
 		image_container.css({
-			'background-image' : 'url(' + images[current_image].src + ')'
+			'background-image' : 'url("' + images[current_image].src + '")'
 		});
+		console.log(images[current_image].src);
 		createImages();
 	})();
 

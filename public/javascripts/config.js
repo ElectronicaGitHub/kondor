@@ -11,7 +11,15 @@ conf = (function () {
 		        { src : "/assets/table.jpg"},
 		        { src : "/assets/door.jpg"},
 		        { src : "/assets/office.jpg"}
-		    ]
+		    ],
+		    header_slides : {
+		        krovati : { src : "/assets/images/goods/bed/1 (1).jpg"},
+		        obuvnici : { src : "/assets/images/goods/obuv/1 (7).jpg"},
+		        reception : { src : "/assets/images/goods/reception/1 (9).jpg"},
+		        shkafi : { src : "/assets/images/goods/shkaf/lest/1 (1).jpg"},
+		        stoly : { src : "/assets/images/goods/table/1 (6).jpg"},
+		        vitrini : { src : "/assets/images/goods/vitrini/1 (2).jpg"}
+		    }
 		}
 	}
 })();

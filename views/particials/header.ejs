@@ -62,7 +62,7 @@
                 <div class="left-column">
                     <ul>
                         <% for (var i in header_goods) { %>
-                            <li><a href="/tovary/<%= i %>"><%= header_goods[i].name %></a></li>
+                            <li data-goods-type="<%= i %>"><a href="/tovary/<%= i %>"><%= header_goods[i].name %></a></li>
                             <!-- <li><a href="/tovary/stoly">Столы</a></li>
                             <li><a href="/tovary/kuhni">Кухни</a></li>
                             <li><a href="/tovary/krovati">Кровати</a></li>
