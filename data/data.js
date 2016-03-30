@@ -338,9 +338,7 @@ module.exports = {
 				{ src : "/assets/images/goods/reception/1 (4).jpg", name : 'Ресепшен арт. 4'},
 				{ src : "/assets/images/goods/reception/1 (5).jpg", name : 'Ресепшен арт. 5'},
 				{ src : "/assets/images/goods/reception/1 (6).jpg", name : 'Ресепшен арт. 6'},
-				{ src : "/assets/images/goods/reception/1 (7).jpg", name : 'Ресепшен арт. 7'},
-				{ src : "/assets/images/goods/reception/1 (8).jpg", name : 'Ресепшен арт. 8'},
-				{ src : "/assets/images/goods/reception/1 (9).jpg", name : 'Ресепшен арт. 9'}
+				{ src : "/assets/images/goods/reception/1 (8).jpg", name : 'Ресепшен арт. 7'}
 			]
 		}
 	},
