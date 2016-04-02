@@ -31,6 +31,10 @@ module.exports = function (express) {
 		res.render('materials');
 	});
 
+	router.get('/prices', function (req, res, next) {
+		res.render('prices');
+	});
+
 	router.get('/about', function (req, res, next) {
 		res.render('about');
 	});
