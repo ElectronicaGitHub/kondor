@@ -95,6 +95,29 @@ html a {
         height: 8px;
         margin: 4px 3px; }
 
+.image-panel-wrapper {
+  height: 400px;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+  .image-panel-wrapper .image-panel {
+    height: 100%; }
+  .image-panel-wrapper .adverticement {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    transition: 0.6s;
+    border: 15px solid #FFB23F;
+    padding: 20px 30px;
+    color: #FFB23F;
+    font-size: 24px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1; }
+    .image-panel-wrapper .adverticement.out {
+      opacity: 0; }
+
 .misc-container {
   padding: 40px 10px;
   font-weight: 300; }

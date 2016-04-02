@@ -148,6 +148,34 @@ $big: 1200px;
 	}
 }
 
+.image-panel-wrapper {
+	height: 400px;
+	width: 96%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	.image-panel {
+		height: 100%;
+	}
+	.adverticement {
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+		transition: 0.6s;
+		border: 15px solid $main_focus_color;
+		padding: 20px 30px;
+		color: $main_focus_color;
+		font-size: 24px;
+		font-weight: 700;
+		background: rgba(0,0,0,.4);
+		opacity: 1;
+		&.out {
+			// bottom: -100px;
+			opacity: 0;
+		}
+	}
+}
+
 .misc-container {
 	padding: 40px 10px;
 	font-weight: 300;
