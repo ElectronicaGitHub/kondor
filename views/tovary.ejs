@@ -73,7 +73,7 @@
 					<% var n = 0; for (var i in current_goods.images) { %>
 					<% var g = current_goods.images[i]; %>
 						<div class="cell">
-							<a href="<%= each_goods_url %>/<%= i %>#<%= ++n %>">
+							<a href="<%= each_goods_url %><%= g.url_name ? ('/' + g.url_name) : '' %>#<%= ++n %>">
 								<div class="goods-image-wrapper">
 									<div class="image" style="background-image:url('<%= g.src %>')"></div>
 									<div class="image-label"><%= g.name %></div>

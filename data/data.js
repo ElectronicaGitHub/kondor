@@ -10,13 +10,17 @@ module.exports = {
 				description : 'Компания “Кондор” изготовит любые виды столов на заказ по индивидуальным размерам: Письменный, кухонный, обеденный, угловой, рабочий, барный, журнальный, стол подоконник. Мы работаем быстро и качественно в Москве.'
 			},
 			images : [
-				{ src : "/assets/images/goods/table/1 (1).jpg", name : 'Стол арт. 1'},
-				{ src : "/assets/images/goods/table/1 (2).jpg", name : 'Стол арт. 2'},
-				{ src : "/assets/images/goods/table/1 (3).jpg", name : 'Стол арт. 3'},
-				{ src : "/assets/images/goods/table/1 (4).jpg", name : 'Стол арт. 4'},
-				{ src : "/assets/images/goods/table/1 (5).jpg", name : 'Стол арт. 5'},
-				{ src : "/assets/images/goods/table/1 (6).jpg", name : 'Стол арт. 6'},
-				{ src : "/assets/images/goods/table/1 (7).jpg", name : 'Стол арт. 7'}
+				{ src : "/assets/images/goods/table/1 (1).jpg", name : 'Стол арт. 1' },
+				{ src : "/assets/images/goods/table/1 (2).jpg", name : 'Стол арт. 2' },
+				{ src : "/assets/images/goods/table/1 (3).jpg", name : 'Стол арт. 3' },
+				{ src : "/assets/images/goods/table/comp/1 (1).jpg", name : 'Компьютерный стол арт. 1', url_name : 'comp' },
+				{ src : "/assets/images/goods/table/comp/1 (2).jpg", name : 'Компьютерный стол арт. 2', url_name : 'comp' },
+				{ src : "/assets/images/goods/table/comp/1 (3).jpg", name : 'Компьютерный стол арт. 3', url_name : 'comp' },
+				{ src : "/assets/images/goods/table/comp/1 (4).jpg", name : 'Компьютерный стол арт. 4', url_name : 'comp' },
+				{ src : "/assets/images/goods/table/1 (4).jpg", name : 'Стол арт. 4' },
+				{ src : "/assets/images/goods/table/1 (5).jpg", name : 'Стол арт. 5' },
+				{ src : "/assets/images/goods/table/1 (6).jpg", name : 'Стол арт. 6' },
+				{ src : "/assets/images/goods/table/1 (7).jpg", name : 'Стол арт. 7' }
 			],
 			types : {
 				comp : {
@@ -50,16 +54,16 @@ module.exports = {
 				description : 'Мебель на заказ в Москве от компании “Кондор”. Наши специалисты в короткие сроки изготовят для вас шкафы любых размеров под заказ.'
 			},
 			images : [
-				{ src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе арт. 1'},
-				{ src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью арт. 1'},
-				{ src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиальный шкаф арт. 1'},
-				{ src : "/assets/images/goods/shkaf/garm/1 (1).jpg", name : 'Шкаф гармошка арт. 1'}
+				{ src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф арт. 1', url_name : 'balk' },
+				{ src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе арт. 1', url_name : 'kupe' },
+				{ src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф арт. 1', url_name : 'lest' },
+				{ src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф арт. 1', url_name : 'vino' },
+				{ src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф арт. 1', url_name : 'vstr' },
+				{ src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью арт. 1', url_name : 'photo' },
+				{ src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф арт. 1', url_name : 'rasp' },
+				{ src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф арт. 1', url_name : 'ugol' },
+				{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиальный шкаф арт. 1', url_name : 'rad' },
+				{ src : "/assets/images/goods/shkaf/garm/1 (1).jpg", name : 'Шкаф гармошка арт. 1', url_name : 'garm' }
 			],
 			types : {
 				balk : {
