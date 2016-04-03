@@ -8,7 +8,6 @@ $(function () {
 			$(".vegas-timer-progress").css("backgroundColor", color);
 			$('.adverticement').addClass('out');
 			n = n + 1 >= adverticements.length ? 0 : n + 1;
-			console.log(n);
 			setTimeout(function () {
 				$('.adverticement').text(adverticements[n].text);
 				$('.adverticement').removeClass('out');
