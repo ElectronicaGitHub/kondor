@@ -44,7 +44,11 @@
 			<% block('description', current_goods_type.seo.description) -%>
 
 			<p class="goods-title"><%= current_goods_type.name %></p>
-			<p class="goods-price">Ориентировочная стоимость от <%= current_goods_type.price %> рублей.</p>
+			<% if (current_goods_type.price) { %>
+				<p class="goods-price">Ориентировочная стоимость от <%= current_goods_type.price %> рублей.</p>
+			<% } else { %>
+				<p class="goods-price">Стоимость варьируется в зависимости от материалов.</p>
+			<% } %>
 			<p class="goods-description"><%= current_goods_type.description %></p>
 
 			<div class="images-container">
@@ -66,7 +70,11 @@
 			<% block('description', current_goods.seo.description) -%>
 
 			<p class="goods-title"><%= current_goods.name %></p>
-			<p class="goods-price">Ориентировочная стоимость от <%= current_goods.price %> рублей.</p>
+			<% if (current_goods.price) { %>
+				<p class="goods-price">Ориентировочная стоимость от <%= current_goods.price %> рублей.</p>
+			<% } else { %>
+				<p class="goods-price">Стоимость варьируется в зависимости от материалов.</p>
+			<% } %>
 			<p class="goods-description"><%= current_goods.description %></p>
 				
 			<% if (current_goods.types) { %>

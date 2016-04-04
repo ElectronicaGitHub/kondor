@@ -38,9 +38,14 @@
 		<div class="right">
 			<div class="info">
 				<h1 class="title"><%= current_goods_type.full_name %></h1>
+				<% if (current_goods_type.price) { %>
+					<p class="price">Ориентировочная стоимость от <%= current_goods_type.price %> рублей.</p>
+				<% } else { %>
+					<p class="price">Стомость варьируется в зависимости от материалов.</p>
+				<% } %>
 				<p class="description"><%= current_goods_type.description %></p>
 				<p class="description">Наши высококвалифицированные мастера помогут вам с идеей вашего заказа и примутся за работу.</p>
-				<p class="description">Сроки изготовления изделия от 10 дней.</p>
+				<p class="description">Сроки изготовления изделия от 15 дней.</p>
 			</div>
 
 			<div class="k-form">

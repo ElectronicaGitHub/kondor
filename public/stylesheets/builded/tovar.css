@@ -250,7 +250,6 @@ html a {
           opacity: 0.3;
           cursor: default; }
   .product-card .right {
-    padding: 0 20px;
     float: left;
     width: 35%; }
     @media only screen and (max-width: 320px) {
@@ -263,9 +262,12 @@ html a {
         width: 100%;
         float: none;
         padding: 20px; } }
+    .product-card .right .k-form {
+      padding: 0 20px; }
+    .product-card .right .info * {
+      padding: 0 20px; }
     .product-card .right .info .title {
       margin: 0;
-      padding: 0;
       font-size: 25px; }
       @media only screen and (max-width: 320px) {
         .product-card .right .info .title {
@@ -273,6 +275,11 @@ html a {
       @media only screen and (min-width: 320px) and (max-width: 767px) {
         .product-card .right .info .title {
           margin-bottom: 20px; } }
+    .product-card .right .info .price {
+      font-size: 15px;
+      margin-top: 12px;
+      background: #ffefd8;
+      padding: 10px 20px; }
     .product-card .right .info .description {
       color: #555;
       margin-bottom: 0;

@@ -108,18 +108,28 @@ $right_width : 100% - $left_width;
 		}
 	}
 	.right {
-		padding: 0 20px;
 		float: left;
 		width: $right_width;
 		@include respond-to(handhelds) { width: 100%; float: none; padding: 20px; }
 		@include respond-to(under-768) { width: 100%; float: none; padding: 20px; }
+		.k-form {
+			padding: 0 20px;
+		}
 		.info {
+			* {
+				padding: 0 20px;
+			}
 			.title {
 				margin: 0;
-				padding: 0;
 				font-size: 25px;
 				@include respond-to(handhelds) { margin-bottom: 20px; }
 				@include respond-to(under-768) { margin-bottom: 20px; }	
+			}
+			.price {
+				font-size: 15px;
+				margin-top: 12px;
+				background: lighten($main_focus_color, 30%);
+				padding: 10px 20px;
 			}
 			.description {
 				color: #555;
