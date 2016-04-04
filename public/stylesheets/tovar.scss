@@ -122,6 +122,7 @@ $right_width : 100% - $left_width;
 			.title {
 				margin: 0;
 				font-size: 25px;
+				font-weight: 700;
 				@include respond-to(handhelds) { margin-bottom: 20px; }
 				@include respond-to(under-768) { margin-bottom: 20px; }	
 			}

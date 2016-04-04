@@ -1,41 +1,18 @@
 @font-face {
-  font-family: 'Raleway';
-  src: url("../../fonts/Raleway/Raleway-Thin.ttf") format("truetype");
-  font-weight: 100; }
-@font-face {
-  font-family: 'Milio';
-  src: url("../../fonts/Milio.ttf") format("truetype"); }
-@font-face {
   font-family: 'Effra';
   src: url("../../fonts/Effra/Dalton Maag - Effra Heavy.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: 'Effra';
-  src: url("../../fonts/Effra/Dalton Maag - Effra Bold.ttf") format("truetype");
-  font-weight: 500; }
-@font-face {
-  font-family: 'Effra';
-  src: url("../../fonts/Effra/Dalton Maag - Effra Medium.ttf") format("truetype");
-  font-weight: 300; }
-@font-face {
-  font-family: 'Effra';
-  src: url("../../fonts/Effra/Dalton Maag - Effra Light.ttf") format("truetype");
-  font-weight: 100; }
-@font-face {
   font-family: 'ProximaNova';
-  src: url("../../fonts/ProximaNova/regular.ttf") format("truetype");
-  font-weight: 100; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../../fonts/ProximaNova/bold.ttf") format("truetype");
+  src: url("../../fonts/ProximaNova/pn-reg.ttf") format("truetype");
   font-weight: 300; }
 @font-face {
   font-family: 'ProximaNova';
-  src: url("../../fonts/ProximaNova/extrabold.ttf") format("truetype");
+  src: url("../../fonts/ProximaNova/pn-semibold.ttf") format("truetype");
   font-weight: 500; }
 @font-face {
   font-family: 'ProximaNova';
-  src: url("../../fonts/ProximaNova/black.ttf") format("truetype");
+  src: url("../../fonts/ProximaNova/pn-bold.ttf") format("truetype");
   font-weight: 700; }
 html, body {
   padding: 0;
@@ -43,7 +20,7 @@ html, body {
   background-color: #f5f5f5; }
 
 html * {
-  font-family: "Effra";
+  font-family: "ProximaNova";
   color: #333333;
   box-sizing: border-box; }
 
@@ -55,7 +32,8 @@ html a {
   overflow: hidden; }
   .interiors h2 {
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-weight: 700; }
   .interiors .each-interior {
     float: left;
     padding: 0 20px;
@@ -63,9 +41,7 @@ html a {
     .interiors .each-interior .item {
       width: 100%;
       height: 250px;
-      position: relative;
-      background-position: center;
-      background-size: cover; }
+      position: relative; }
       .interiors .each-interior .item img {
         width: 100%;
         height: 100%;
@@ -248,7 +224,7 @@ header {
           header .wrapper .top-panel .content .bottom a {
             float: left;
             background-color: #f5f5f5;
-            font-family: "Effra";
+            font-family: "ProximaNova";
             font-weight: 500;
             padding: 10px 15px;
             border-radius: 5px;
@@ -271,7 +247,7 @@ header {
             header .wrapper .top-panel .content .bottom a.main-focus {
               position: relative;
               background-color: #FFB23F;
-              font-family: "Effra";
+              font-family: "ProximaNova";
               font-weight: 500;
               padding: 10px 15px;
               border-radius: 5px;
@@ -303,7 +279,7 @@ header {
                 cursor: default; }
             header .wrapper .top-panel .content .bottom a.callback {
               background-color: #0db741;
-              font-family: "Effra";
+              font-family: "ProximaNova";
               font-weight: 500;
               padding: 10px 15px;
               border-radius: 5px;
@@ -383,7 +359,7 @@ header {
           header .slider-drop-down .menu-wrapper .left-column ul li {
             height: 26px;
             line-height: 26px;
-            font-family: "Effra";
+            font-family: "ProximaNova";
             font-weight: 100;
             font-size: 16px;
             padding-right: 90px;
