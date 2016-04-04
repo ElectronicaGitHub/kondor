@@ -26,7 +26,8 @@ $(function () {
 	$(".owl-carousels").owlCarousel({
 		dotsSpeed : 400,
 		items : 1,
-		smartSpeed : 250
+		smartSpeed : 250,
+		lazyLoad : true
   	});
 });
 
