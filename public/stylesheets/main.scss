@@ -103,11 +103,19 @@ $big: 1200px;
 		padding: 0 20px;
 		overflow: hidden;
 		.item {
-			img {
-				display: block;
-			    width: 100%;
-			    height: 250px;
-			}
+		    width: 100%;
+		    height: 250px;
+		    position: relative;
+	    	background-position: center;
+	    	background-size: cover;
+		    .fader {
+		    	position: absolute;
+		    	top: 0;
+		    	left: 0;
+		    	width: 100%;
+		    	height: 100%;
+		    	background: rgba(0,0,0,.3);
+		    }
 		}
 		.title {
 			position: absolute;

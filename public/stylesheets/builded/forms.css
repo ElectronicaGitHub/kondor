@@ -60,10 +60,19 @@ html a {
     float: left;
     padding: 0 20px;
     overflow: hidden; }
-    .interiors .each-interior .item img {
-      display: block;
+    .interiors .each-interior .item {
       width: 100%;
-      height: 250px; }
+      height: 250px;
+      position: relative;
+      background-position: center;
+      background-size: cover; }
+      .interiors .each-interior .item .fader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); }
     .interiors .each-interior .title {
       position: absolute;
       display: inline-block;

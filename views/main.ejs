@@ -18,12 +18,13 @@
 				<% var jj = interiors[i].images.length < 4 ? interiors[i].images.length : 4; %>
 				<% for (var j = 0; j < jj; j++) { %>
 					<a href="/interior/<%= i %>">
-						<div class="item">
-							<span class="title">
-								<p class="name"><%= interiors[i].name %></p>
-								<p class="price">от <%= interiors[i].price %> руб.</p>
-							</span>
-							<img src="<%= interiors[i].images[j].src %>" alt="<%= interiors[i].images[j].name %>">
+						<div class="item" style="background-image: url('<%= interiors[i].images[j].src %>')">
+							<div class="fader">
+								<span class="title">
+									<p class="name"><%= interiors[i].name %></p>
+									<p class="price">от <%= interiors[i].price %> руб.</p>
+								</span>
+							</div>
 						</div>
 					</a>
 				<% } %>
