@@ -50,7 +50,7 @@ module.exports = {
 			name : 'Шкафы',
 			price : 12000,
 			full_name : 'Шкаф на заказ',
-			image : { src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф арт. 1'},
+			image : { src : "/assets/images/goods/shkaf/kupe/1 (11).jpg", name : 'Шкаф купе арт. 1', url_name : 'kupe' },
 			description : 'Каждый из нас в той или иной мере пользуется шкафами в повседневной жизни, будь то обычный распашной сервант, либо шкаф на балкон. Шкаф должен быть максимально вместительным и идеально вписываться в интерьер. Компания Кондор предлагает вам огромный ассортимент шкафов от нашей компании.',
 			seo : {
 				title : 'Шкафы на заказ Москва. По индивидуальным размерам, частный мастер.',
@@ -241,13 +241,13 @@ module.exports = {
 						description : 'Подобрать и купить радиусные шкафы купе по индивидуальным размерам на заказ в Москве вы можете в компании “Кондор”. Мы с радостью изготовим для вас угловой радиусный шкаф в кротчайшие сроки.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиальный шкаф арт. 1'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (2).jpg", name : 'Радиальный шкаф арт. 2'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (3).jpg", name : 'Радиальный шкаф арт. 3'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (4).jpg", name : 'Радиальный шкаф арт. 4'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (5).jpg", name : 'Радиальный шкаф арт. 5'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (6).jpg", name : 'Радиальный шкаф арт. 6'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (7).jpg", name : 'Радиальный шкаф арт. 7'}
+						{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиусный шкаф арт. 1'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (2).jpg", name : 'Радиусный шкаф арт. 2'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (3).jpg", name : 'Радиусный шкаф арт. 3'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (4).jpg", name : 'Радиусный шкаф арт. 4'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (5).jpg", name : 'Радиусный шкаф арт. 5'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (6).jpg", name : 'Радиусный шкаф арт. 6'},
+						{ src : "/assets/images/goods/shkaf/rad/1 (7).jpg", name : 'Радиусный шкаф арт. 7'}
 					]
 				}
 			}
@@ -305,21 +305,21 @@ module.exports = {
 				title : 'Обувница на заказ по своим размерам. Галошницы в прихожую узкие.',
 				description : 'Купить обувницы, галошницы на заказ по своим размерам и по своему проекту вы можете в компании “Кондор”. Мы изготавливаем в короткие сроки тумбы, узкие обувницы, шкафы для обуви. Москва.'
 			},
-			image : { src : "/assets/images/goods/obuv/1 (1).jpg", name : 'Обувница арт. 1'},
+			image : { src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница арт. 1'},
 			images : [
-				{ src : "/assets/images/goods/obuv/1 (1).jpg", name : 'Обувница арт. 1'},
-				{ src : "/assets/images/goods/obuv/1 (2).jpg", name : 'Обувница арт. 2'},
-				{ src : "/assets/images/goods/obuv/1 (3).jpg", name : 'Обувница арт. 3'},
-				{ src : "/assets/images/goods/obuv/1 (4).jpg", name : 'Обувница арт. 4'},
-				{ src : "/assets/images/goods/obuv/1 (5).jpg", name : 'Обувница арт. 5'},
-				{ src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница арт. 6'},
+				{ src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница арт. 1'},
+				{ src : "/assets/images/goods/obuv/1 (1).jpg", name : 'Обувница арт. 2'},
+				{ src : "/assets/images/goods/obuv/1 (2).jpg", name : 'Обувница арт. 3'},
+				{ src : "/assets/images/goods/obuv/1 (3).jpg", name : 'Обувница арт. 4'},
+				{ src : "/assets/images/goods/obuv/1 (4).jpg", name : 'Обувница арт. 5'},
+				{ src : "/assets/images/goods/obuv/1 (5).jpg", name : 'Обувница арт. 6'},
 				{ src : "/assets/images/goods/obuv/1 (7).jpg", name : 'Обувница арт. 7'}
 			]
 		},
 		vitrini : {
 			name : 'Витрины',
 			full_name : 'Витрина на заказ',
-			image : { src : "/assets/images/goods/vitrini/1 (1).jpg", name : 'Витрина арт. 1'},
+			image : { src : "/assets/images/goods/vitrini/1 (10).jpg", name : 'Витрина арт. 1'},
 			description : 'Главное предназначение витрины - обеспечить полный доступ для обзора товаров. Это не просто один из самых эффективных способов использования пространства магазина, но и возможность создать уникальный интерьер. Выставочные или торговые витрины позволяют быстро ознакомить покупателя с ассортиментом магазина. Наши мастера помогут вам с выбором дизайна и изготовят для вас витрины из качественных и долговечных материалов.',
 			seo : {
 				title : 'Торговое оборудование на заказ. Витрины и стеллажи для магазинов под заказ в Москве.',
@@ -346,7 +346,7 @@ module.exports = {
 			name : 'Ресепшны',
 			full_name : 'Ресепшн на заказ',
 			price : 65000,
-			image : { src : "/assets/images/goods/reception/1 (1).jpg", name : 'Ресепшен арт. 1'},
+			image : { src : "/assets/images/goods/reception/1 (6).jpg", name : 'Ресепшен арт. 1'},
 			description : 'Первое впечатление о вашем помещении создает стойка администратора или стойка ресепшн.  Стойка должна производить приятное впечатление на посетителей и быть удобной для сотрудников. Поэтому очень важно, насколько грамотно она будет спроектирована и размещена в помещении Мастера компании "Кондор" помогут вам создавать зону ресепшн в собственном индивидуальном стиле.',
 			seo : {
 				title : 'Торговое оборудование на заказ. Витрины и стеллажи под заказ в Москве. Изготовление стоек ресепшн на заказ. Стойка администратора.',

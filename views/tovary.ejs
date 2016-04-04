@@ -44,6 +44,7 @@
 			<% block('description', current_goods_type.seo.description) -%>
 
 			<p class="goods-title"><%= current_goods_type.name %></p>
+			<p class="goods-price">Ориентировочная стоимость от <%= current_goods_type.price %> рублей.</p>
 			<p class="goods-description"><%= current_goods_type.description %></p>
 
 			<div class="images-container">
@@ -65,6 +66,7 @@
 			<% block('description', current_goods.seo.description) -%>
 
 			<p class="goods-title"><%= current_goods.name %></p>
+			<p class="goods-price">Ориентировочная стоимость от <%= current_goods.price %> рублей.</p>
 			<p class="goods-description"><%= current_goods.description %></p>
 				
 			<% if (current_goods.types) { %>
@@ -109,8 +111,18 @@
 					<div class="cell">
 						<a href="/tovary/<%= j %>">
 							<div class="goods-image-wrapper">
-								<div class="image" style="background-image:url('<%= all_goods[j].image.src %>')"></div>
-								<div class="image-label"><%= all_goods[j].name %></div>
+								<div class="image" style="background-image:url('<%= all_goods[j].image.src %>')">
+									<div class="fader">
+										<span class="text">
+											<p class="label"><%= all_goods[j].name %></p>
+											<% if (all_goods[j].price) { %>
+												<p class="price">от <%= all_goods[j].price %> руб.</p>
+											<% } else { %>
+												<p class="price">Цена варьируется</p>
+											<% } %>
+										</span>
+									</div>
+								</div>
 							</div>
 						</a>
 					</div>
