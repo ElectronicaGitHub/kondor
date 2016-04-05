@@ -18,7 +18,9 @@
 				<% var jj = interiors[i].images.length < 4 ? interiors[i].images.length : 4; %>
 				<% for (var j = 0; j < jj; j++) { %>
 					<a href="/interior/<%= i %>">
-						<div class="item" style="background-image: url('<%= interiors[i].images[j].src %>')">
+						<!-- <div class="item" style="background-image: url('<%= interiors[i].images[j].src %>')"> -->
+						<div class="item">
+							<img class="owl-lazy" data-src="<%= interiors[i].images[j].src %>">
 							<div class="fader">
 								<span class="title">
 									<p class="name"><%= interiors[i].name %></p>
