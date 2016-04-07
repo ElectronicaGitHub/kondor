@@ -107,11 +107,13 @@ header {
 					height: 60px;
 					font-size: 15px;
 					line-height: 60px;
-					margin-left: 15px;
+					// margin-left: 15px;
 					a {
 						text-decoration: underline;
 						margin-right: 30px;
 						font-family: 'Milio';
+						@include respond-to(under-768) { margin-right: 10px; }
+						@include respond-to(768-992) { margin-right: 10px; }
 					}
 				}
 				.bottom {

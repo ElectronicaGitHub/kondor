@@ -10,7 +10,7 @@
 
 
 <div class="interiors container">
-	<h2>Каталог мебели на заказ</h2>
+	<h1>Примеры мебели на заказ</h1>
 	
 	<% for (var i in interiors) { %>
 		<div class="each-interior col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -23,7 +23,7 @@
 							<img class="owl-lazy" data-src="<%= interiors[i].images[j].src %>">
 							<div class="fader">
 								<span class="title">
-									<p class="name"><%= interiors[i].name %></p>
+									<h2 class="name"><%= interiors[i].name %></h2>
 									<p class="price">от <%= interiors[i].price %> руб.</p>
 								</span>
 							</div>

@@ -30,13 +30,13 @@ html a {
 .interiors {
   margin: 20px auto 10px auto;
   overflow: hidden; }
-  .interiors h2 {
+  .interiors h1 {
     text-align: center;
     margin-bottom: 40px;
     font-weight: 700; }
   .interiors .each-interior {
     float: left;
-    padding: 0 20px;
+    padding: 0 15px;
     overflow: hidden; }
     .interiors .each-interior .item {
       width: 100%;
@@ -46,8 +46,10 @@ html a {
         width: 100%;
         height: 100%;
         background-position: center;
-        background-size: cover; }
+        background-size: cover;
+        border-radius: 4px; }
       .interiors .each-interior .item .fader {
+        border-radius: 4px;
         position: absolute;
         top: 0;
         left: 0;
@@ -71,6 +73,7 @@ html a {
         font-weight: 700;
         font-size: 30px;
         color: #FFB23F;
+        margin: 0 0 10px 0;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
         @media only screen and (max-width: 320px) {
           .interiors .each-interior .title .name {
@@ -78,8 +81,7 @@ html a {
       .interiors .each-interior .title .price {
         font-weight: 700;
         font-size: 20px;
-        color: white;
-        padding-top: 10px; }
+        color: white; }
         @media only screen and (max-width: 320px) {
           .interiors .each-interior .title .price {
             font-size: 16px; } }
@@ -125,14 +127,16 @@ html a {
   .misc-container h3 {
     font-weight: 500; }
 
-h2 {
-  margin-bottom: 30px; }
+h1 {
+  margin: 30px auto;
+  font-size: 25px;
+  font-weight: 700; }
   @media only screen and (max-width: 320px) {
-    h2 {
+    h1 {
       text-align: center;
       margin-bottom: 15px; } }
   @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    h2 {
+    h1 {
       text-align: center;
       margin-bottom: 15px; } }
 
@@ -158,7 +162,8 @@ h2 {
       font-weight: 700; }
     .left-panel > ul li p {
       padding: 5px 10px;
-      margin: 7px 0;
+      margin: 5px 0;
+      font-size: 16px;
       transition: background-color .2s; }
       .left-panel > ul li p:hover {
         background-color: #ffefd8; }
@@ -170,8 +175,7 @@ h2 {
 
 .right-panel {
   float: left;
-  width: calc(100% - 200px);
-  padding: 5px 20px; }
+  width: calc(100% - 200px); }
   @media only screen and (max-width: 320px) {
     .right-panel {
       width: calc(100% - 150px);
@@ -199,26 +203,12 @@ h2 {
       .right-panel .images-container .cell {
         width: 100%;
         height: 200px; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
       .right-panel .images-container .cell {
         width: 100%;
-        height: 200px; } }
-    .right-panel .images-container .cell:nth-child(2n) {
-      padding-right: 0; }
-      @media only screen and (max-width: 320px) {
-        .right-panel .images-container .cell:nth-child(2n) {
-          padding: 0; } }
-      @media only screen and (min-width: 321px) and (max-width: 1023px) {
-        .right-panel .images-container .cell:nth-child(2n) {
-          padding: 0; } }
-    .right-panel .images-container .cell:nth-child(2n+1) {
-      padding-left: 0; }
-      @media only screen and (max-width: 320px) {
-        .right-panel .images-container .cell:nth-child(2n+1) {
-          padding: 0; } }
-      @media only screen and (min-width: 321px) and (max-width: 1023px) {
-        .right-panel .images-container .cell:nth-child(2n+1) {
-          padding: 0; } }
+        height: 300px; } }
+    .right-panel .images-container .cell.no-height {
+      height: initial; }
     .right-panel .images-container .cell .goods-image-wrapper {
       width: 100%;
       height: 100%; }
@@ -245,7 +235,7 @@ h2 {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.2); }
+          background-color: rgba(0, 0, 0, 0.1); }
         .right-panel .images-container .cell .goods-image-wrapper .image .text {
           line-height: 30px;
           display: inline-block;
@@ -262,7 +252,7 @@ h2 {
             font-weight: 700;
             font-size: 20px;
             color: white;
-            padding-top: 10px; }
+            margin: 0; }
             @media only screen and (max-width: 320px) {
               .right-panel .images-container .cell .goods-image-wrapper .image .text .price {
                 font-size: 16px; } }

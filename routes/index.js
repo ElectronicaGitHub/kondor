@@ -66,7 +66,7 @@ module.exports = function (express) {
 				current_goods : current_goods,
 				current_goods_type : current_goods,
 				breadcrumbs : [
-					{ name : 'Каталог товаров', url : '/' }
+					{ name : 'Примеры мебели на заказ', url : '/' }
 				]
 			});
 		} else res.redirect('/');
@@ -260,13 +260,13 @@ var MISC = {
 	makeBreadCrumbs : function (categoryName, categorySlug, typeName, typeSlug) {
 		if (arguments.length == 4) {
 			return [
-				{ name : 'Каталог товаров', url : '/tovary' }, 
+				{ name : 'Примеры работ', url : '/tovary' }, 
 				{ name : categoryName, url : '/tovary/' + categorySlug },
 				{ name : typeName, url : '/tovary/' + categorySlug + '/' + typeSlug }
 			]
 		} else if (arguments.length == 2) {
 			return [
-				{ name : 'Каталог товаров', url : '/tovary' }, 
+				{ name : 'Примеры работ', url : '/tovary' }, 
 				{ name : categoryName, url : '/tovary/' + categorySlug }
 			]
 		}

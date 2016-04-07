@@ -20,20 +20,18 @@
 	
 	<div class="product-card">
 		<div class="left">
-			<!-- <div class="main-image" style="background-image:url('<%= current_goods_type.images[0].src %>')"></div> -->
 			<div class="main-image">
 				<div class="owl-carousels-tovar">
 					<% var jj = current_goods_type.images.length; %>
 					<% for (var j = 0; j < jj; j++) { %>
-						<div class="item" style="background-image: url('<%= current_goods_type.images[j].src %>')">
-							<!-- <img src="<%= current_goods_type.images[j].src %>" alt="<%= current_goods_type.images[j].name %>"> -->
-						</div>
+						<div class="item" style="background-image: url('<%= current_goods_type.images[j].src %>')"></div>
 					<% } %>
 				</div>
 				<div class="dots-nav"></div>
 			</div>
 
 			<div class="mini-images-container"></div>
+			<div class="description"><%= current_goods_type.description %></div>
 		</div>
 		<div class="right">
 			<div class="info">
@@ -43,8 +41,7 @@
 				<% } else { %>
 					<p class="price">Стомость варьируется в зависимости от материалов.</p>
 				<% } %>
-				<p class="description"><%= current_goods_type.description %></p>
-				<p class="description">Наши высококвалифицированные мастера помогут вам с идеей вашего заказа и примутся за работу.</p>
+				<p class="description">Наши высококвалифицированные мастера помогут Вам с идеей вашего будущего изделия, а так же проконсультируют по цене.</p>
 				<p class="description">Сроки изготовления изделия от 15 дней.</p>
 			</div>
 

@@ -5,7 +5,7 @@
 
 <div class="container">
 
-	<h2>Каталог мебели</h2>	
+	<h1>Примеры наших работ</h1>	
 	
 	<div class="left-panel">
 		<ul>
@@ -116,13 +116,13 @@
 			<!-- БЛАНКОВЫЙ КАТАЛОГ -->
 			<div class="images-container">
 				<% var n = 0; for (var j in all_goods) { %>
-					<div class="cell">
+					<div class="cell no-height">
 						<a href="/tovary/<%= j %>">
 							<div class="goods-image-wrapper">
 								<div class="image" style="background-image:url('<%= all_goods[j].image.src %>')">
 									<div class="fader">
 										<span class="text">
-											<p class="label"><%= all_goods[j].name %></p>
+											<h2 class="label"><%= all_goods[j].name %></h2>
 											<% if (all_goods[j].price) { %>
 												<p class="price">от <%= all_goods[j].price %> руб.</p>
 											<% } else { %>

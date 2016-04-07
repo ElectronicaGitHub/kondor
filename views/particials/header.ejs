@@ -15,11 +15,13 @@
             <a href="/prices">Цены</a>
             <a href="/contacts">Контакты</a>
             <a href="/comments">Отзывы</a>
+            <a href="/materials">Материалы</a>
+            <a href="/dostavka">Доставка и оплата</a>
         </div>
         <div class="bottom clearfix">
             <a class="main-focus" href="/tovary"><span>Мебель на заказ</span></a>
-            <a href="/materials"><span>Материалы</span></a>
-            <a href="/dostavka"><span>Доставка и оплата</span></a>
+            <!-- <a href="/materials"><span>Материалы</span></a> -->
+            <!-- <a href="/dostavka"><span>Доставка и оплата</span></a> -->
             <a class="callback js-init-callbackmodal" href=""><span>Заказать звонок</span></a>
         </div>
 
@@ -31,21 +33,27 @@
             <div class="content">
                     
                 <div class="top">
+                    <a href="/dostavka">Доставка и оплата</a>
+                    <a href="/prices">Цены</a>
                     <a href="/about">О компании</a>
                     <!-- <a href="">Доставка и оплата</a> -->
-                    <a href="/prices">Цены</a>
-                    <a href="/contacts">Контакты</a>
+                    <!-- <a href="/contacts">Контакты</a> -->
                     <a href="/comments">Отзывы</a>
+                    <!-- <a href="/materials">Материалы</a> -->
                 </div>
 
                 <div class="bottom">
-                    <a class="main-focus" id="js-menu-init" href="/tovary">Мебель на заказ
-                        <div class="menu-helper"></div>
-                    </a>
-                    <a href="/materials">Материалы</a>
+                    <!-- <a class="main-focus" id="js-menu-init" href="/tovary">Мебель на заказ -->
+                        <!-- <div class="menu-helper"></div> -->
+                    <!-- </a> -->
+                    <% for (var i in header_goods) { %>
+                        <a href="/tovary/<%= i %>"><%= header_goods[i].name %></a>
+                    <% } %>
+
+                    <!-- <a href="/materials">Материалы</a> -->
                     <a class="callback js-init-callbackmodal" href="">Заказать звонок</a>
                     <!-- <a href="">Фотографии изделий</a> -->
-                    <a href="/dostavka">Доставка и оплата</a>
+                    <!-- <a href="/dostavka">Доставка и оплата</a> -->
                 </div>
             </div>
 
