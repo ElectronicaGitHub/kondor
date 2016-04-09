@@ -82,8 +82,8 @@ $big: 1200px;
 	border-radius: 3px;
 	margin-right: 10px;
 	transition: background-color 0.2s;
-	@include respond-to(handhelds) { padding: 5px 10px; margin-right: 15px; }
-	@include respond-to(medium-screens) { padding: 5px 10px; margin-right: 15px; }
+	@include respond-to(handhelds) { padding: 5px; margin-right: 5px; }
+	@include respond-to(medium-screens) { padding: 5px; margin-right: 5px; }
 	@include respond-to(mobile-screens) { padding: 5px 10px; margin-right: 15px; }
 	&:hover {
 		background-color: darken($color, 10%);
