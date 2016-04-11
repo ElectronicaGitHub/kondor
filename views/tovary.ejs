@@ -54,7 +54,7 @@
 			<div class="images-container">
 				<% var n = 0; for (var j in current_goods_type.images) { %>
 					<div class="cell">
-						<a href="<%= each_goods_url %>#<%= ++n %>">
+						<a href="<%= each_goods_url %>/<%= current_goods_type.images[j].id %>">
 							<div class="goods-image-wrapper">
 								<div class="image" style="background-image:url('<%= current_goods_type.images[j].src %>')"></div>
 								<div class="image-label"><%= current_goods_type.images[j].name %></div>
@@ -83,7 +83,7 @@
 					<% var n = 0; for (var i in current_goods.images) { %>
 					<% var g = current_goods.images[i]; %>
 						<div class="cell">
-							<a href="<%= each_goods_url %><%= g.url_name ? ('/' + g.url_name) : '' %>#<%= ++n %>">
+							<a href="<%= each_goods_url %><%= g.url_name ? ('/' + g.url_name) : '/' + 'default' %>/<%= g.id %>">
 								<div class="goods-image-wrapper">
 									<div class="image" style="background-image:url('<%= g.src %>')"></div>
 									<div class="image-label"><%= g.name %></div>
@@ -98,7 +98,7 @@
 				<div class="images-container">
 					<% var n = 0; for (var j in current_goods.images) { %>
 						<div class="cell">
-							<a href="<%= each_goods_url %>#<%= ++n %>">
+							<a href="<%= each_goods_url %>/<%= current_goods.images[j].id %>">
 								<div class="goods-image-wrapper">
 									<div class="image" style="background-image:url('<%= current_goods.images[j].src %>')"></div>
 									<div class="image-label"><%= current_goods.images[j].name %></div>

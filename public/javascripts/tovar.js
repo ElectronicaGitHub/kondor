@@ -5,7 +5,8 @@ $(function () {
 	var mini_image_class = 'mini-image';
 	var current_image, owl;
 	(function init () {
-		current_image = Number(window.location.hash[1]) - 1 || 0;
+		current_image = parseInt(window.number) - 1 < 0 ? 0 :  parseInt(window.number) - 1;
+		console.log(current_image);
 		createImages();
 
 		owl = $(".owl-carousels-tovar").owlCarousel({
