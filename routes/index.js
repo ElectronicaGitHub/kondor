@@ -65,6 +65,7 @@ module.exports = function (express) {
 				all_goods : d.tovary,
 				current_goods : current_goods,
 				current_goods_type : current_goods,
+				number : 0,
 				breadcrumbs : [
 					{ name : 'Примеры мебели на заказ', url : '/' }
 				]
