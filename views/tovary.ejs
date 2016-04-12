@@ -98,7 +98,7 @@
 				<div class="images-container">
 					<% var n = 0; for (var j in current_goods.images) { %>
 						<div class="cell">
-							<a href="<%= each_goods_url %>#<%= ++n %>">
+							<a href="<%= each_goods_url %>/default/<%= ++n %>">
 								<div class="goods-image-wrapper">
 									<div class="image" style="background-image:url('<%= current_goods.images[j].src %>')"></div>
 									<div class="image-label"><%= current_goods.images[j].name %></div>
