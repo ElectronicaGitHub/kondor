@@ -11,17 +11,17 @@ module.exports = {
 				description : 'Компания “Кондор” изготовит любые виды столов на заказ по индивидуальным размерам: Письменный, кухонный, обеденный, угловой, рабочий, барный, журнальный, стол подоконник. Мы работаем быстро и качественно в Москве.'
 			},
 			images : [
-				{ src : "/assets/images/goods/table/1 (1).jpg", name : 'Стол изд. 1' },
-				{ src : "/assets/images/goods/table/1 (2).jpg", name : 'Стол изд. 2' },
-				{ src : "/assets/images/goods/table/1 (3).jpg", name : 'Стол изд. 3' },
-				{ src : "/assets/images/goods/table/comp/1 (1).jpg", name : 'Компьютерный стол изд. 1', url_name : 'comp' },
-				{ src : "/assets/images/goods/table/comp/1 (2).jpg", name : 'Компьютерный стол изд. 2', url_name : 'comp' },
-				{ src : "/assets/images/goods/table/comp/1 (3).jpg", name : 'Компьютерный стол изд. 3', url_name : 'comp' },
-				{ src : "/assets/images/goods/table/comp/1 (4).jpg", name : 'Компьютерный стол изд. 4', url_name : 'comp' },
-				{ src : "/assets/images/goods/table/1 (4).jpg", name : 'Стол изд. 4' },
-				{ src : "/assets/images/goods/table/1 (5).jpg", name : 'Стол изд. 5' },
-				{ src : "/assets/images/goods/table/1 (6).jpg", name : 'Стол изд. 6' },
-				{ src : "/assets/images/goods/table/1 (7).jpg", name : 'Стол изд. 7' }
+				{ id : 1, src : "/assets/images/goods/table/1 (1).jpg", name : 'Стол изд. 1' },
+				{ id : 2, src : "/assets/images/goods/table/1 (2).jpg", name : 'Стол изд. 2' },
+				{ id : 3, src : "/assets/images/goods/table/1 (3).jpg", name : 'Стол изд. 3' },
+				{ id : 1, src : "/assets/images/goods/table/comp/1 (1).jpg", name : 'Компьютерный стол изд. 1', url_name : 'comp' },
+				{ id : 2, src : "/assets/images/goods/table/comp/1 (2).jpg", name : 'Компьютерный стол изд. 2', url_name : 'comp' },
+				{ id : 3, src : "/assets/images/goods/table/comp/1 (3).jpg", name : 'Компьютерный стол изд. 3', url_name : 'comp' },
+				{ id : 4, src : "/assets/images/goods/table/comp/1 (4).jpg", name : 'Компьютерный стол изд. 4', url_name : 'comp' },
+				{ id : 8, src : "/assets/images/goods/table/1 (4).jpg", name : 'Стол изд. 4' },
+				{ id : 9, src : "/assets/images/goods/table/1 (5).jpg", name : 'Стол изд. 5' },
+				{ id : 10, src : "/assets/images/goods/table/1 (6).jpg", name : 'Стол изд. 6' },
+				{ id : 11, src : "/assets/images/goods/table/1 (7).jpg", name : 'Стол изд. 7' }
 			],
 			types : {
 				comp : {
@@ -34,14 +34,14 @@ module.exports = {
 						description : 'Подобрать и купить компьютерный стол на заказ по индивидуальным размерам вы можете в компании “Кондор”. Угловой компьютерный стол из дерева будет идеальным решением как для взрослого, так и для ребенка.'
 					},
 					images : [
-						{ src : "/assets/images/goods/table/comp/1 (1).jpg", name : 'Компьютерный стол изд. 1'},
-						{ src : "/assets/images/goods/table/comp/1 (2).jpg", name : 'Компьютерный стол изд. 2'},
-						{ src : "/assets/images/goods/table/comp/1 (3).jpg", name : 'Компьютерный стол изд. 3'},
-						{ src : "/assets/images/goods/table/comp/1 (4).jpg", name : 'Компьютерный стол изд. 4'},
-						{ src : "/assets/images/goods/table/comp/1 (5).jpg", name : 'Компьютерный стол изд. 5'},
-						{ src : "/assets/images/goods/table/comp/1 (6).jpg", name : 'Компьютерный стол изд. 6'},
-						{ src : "/assets/images/goods/table/comp/1 (7).jpg", name : 'Компьютерный стол изд. 7'},
-						{ src : "/assets/images/goods/table/comp/1 (8).jpg", name : 'Компьютерный стол изд. 8'}
+						{ id : 1, src : "/assets/images/goods/table/comp/1 (1).jpg", name : 'Компьютерный стол изд. 1'},
+						{ id : 2, src : "/assets/images/goods/table/comp/1 (2).jpg", name : 'Компьютерный стол изд. 2'},
+						{ id : 3, src : "/assets/images/goods/table/comp/1 (3).jpg", name : 'Компьютерный стол изд. 3'},
+						{ id : 4, src : "/assets/images/goods/table/comp/1 (4).jpg", name : 'Компьютерный стол изд. 4'},
+						{ id : 5, src : "/assets/images/goods/table/comp/1 (5).jpg", name : 'Компьютерный стол изд. 5'},
+						{ id : 6, src : "/assets/images/goods/table/comp/1 (6).jpg", name : 'Компьютерный стол изд. 6'},
+						{ id : 7, src : "/assets/images/goods/table/comp/1 (7).jpg", name : 'Компьютерный стол изд. 7'},
+						{ id : 8, src : "/assets/images/goods/table/comp/1 (8).jpg", name : 'Компьютерный стол изд. 8'}
 					]
 				}
 			},
@@ -57,16 +57,16 @@ module.exports = {
 				description : 'Мебель на заказ в Москве от компании “Кондор”. Наши специалисты в короткие сроки изготовят для вас шкафы любых размеров под заказ.'
 			},
 			images : [
-				{ src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф изд. 1', url_name : 'balk' },
-				{ src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе изд. 1', url_name : 'kupe' },
-				{ src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф изд. 1', url_name : 'lest' },
-				{ src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф изд. 1', url_name : 'vino' },
-				{ src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф изд. 1', url_name : 'vstr' },
-				{ src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью изд. 1', url_name : 'photo' },
-				{ src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф изд. 1', url_name : 'rasp' },
-				{ src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф изд. 1', url_name : 'ugol' },
-				{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиальный шкаф изд. 1', url_name : 'rad' },
-				{ src : "/assets/images/goods/shkaf/garm/1 (1).jpg", name : 'Шкаф гармошка изд. 1', url_name : 'garm' }
+				{ id : 1, src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф изд. 1', url_name : 'balk' },
+				{ id : 1, src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе изд. 1', url_name : 'kupe' },
+				{ id : 1, src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф изд. 1', url_name : 'lest' },
+				{ id : 1, src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф изд. 1', url_name : 'vino' },
+				{ id : 1, src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф изд. 1', url_name : 'vstr' },
+				{ id : 1, src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью изд. 1', url_name : 'photo' },
+				{ id : 1, src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф изд. 1', url_name : 'rasp' },
+				{ id : 1, src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф изд. 1', url_name : 'ugol' },
+				{ id : 1, src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиальный шкаф изд. 1', url_name : 'rad' },
+				{ id : 1, src : "/assets/images/goods/shkaf/garm/1 (1).jpg", name : 'Шкаф гармошка изд. 1', url_name : 'garm' }
 			],
 			types : {
 				balk : {
@@ -79,16 +79,16 @@ module.exports = {
 						description : 'Мебель для балкона и на лоджию на заказ в Москве от компании “Кондор”. Наши специалисты в короткие сроки изготовят для вас встроенные шкафы, шкафы-купе и просто шкаф для балкона.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (2).jpg", name : 'Балконный шкаф изд. 2'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (3).jpg", name : 'Балконный шкаф изд. 3'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (4).jpg", name : 'Балконный шкаф изд. 4'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (5).jpg", name : 'Балконный шкаф изд. 5'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (6).jpg", name : 'Балконный шкаф изд. 6'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (7).jpg", name : 'Балконный шкаф изд. 7'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (8).jpg", name : 'Балконный шкаф изд. 8'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (9).jpg", name : 'Балконный шкаф изд. 9'},
-						{ src : "/assets/images/goods/shkaf/balk/1 (10).jpg", name : 'Балконный шкаф изд. 10'}
+						{ id : 1, src : "/assets/images/goods/shkaf/balk/1 (1).jpg", name : 'Балконный шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/balk/1 (2).jpg", name : 'Балконный шкаф изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/balk/1 (3).jpg", name : 'Балконный шкаф изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/balk/1 (4).jpg", name : 'Балконный шкаф изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/balk/1 (5).jpg", name : 'Балконный шкаф изд. 5'},
+						{ id : 6, src : "/assets/images/goods/shkaf/balk/1 (6).jpg", name : 'Балконный шкаф изд. 6'},
+						{ id : 7, src : "/assets/images/goods/shkaf/balk/1 (7).jpg", name : 'Балконный шкаф изд. 7'},
+						{ id : 8, src : "/assets/images/goods/shkaf/balk/1 (8).jpg", name : 'Балконный шкаф изд. 8'},
+						{ id : 9, src : "/assets/images/goods/shkaf/balk/1 (9).jpg", name : 'Балконный шкаф изд. 9'},
+						{ id : 10, src : "/assets/images/goods/shkaf/balk/1 (10).jpg", name : 'Балконный шкаф изд. 10'}
 					]
 				},
 				garm : {
@@ -114,19 +114,19 @@ module.exports = {
 						description : 'Купить шкаф купе на заказ по индивидуальным размерам в Москве вы можете в компании “Кондор”. Встроенные, угловые, радиусные, в классическом стиле наши мастера изготовят качественные шкафы-купе именно для вас! Недорого.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе изд. 1'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (2).jpg", name : 'Шкаф купе изд. 2'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (3).jpg", name : 'Шкаф купе изд. 3'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (4).jpg", name : 'Шкаф купе изд. 4'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (5).jpg", name : 'Шкаф купе изд. 5'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (6).jpg", name : 'Шкаф купе изд. 6'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (7).jpg", name : 'Шкаф купе изд. 7'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (8).jpg", name : 'Шкаф купе изд. 8'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (9).jpg", name : 'Шкаф купе изд. 9'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (10).jpg", name : 'Шкаф купе изд. 10'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (11).jpg", name : 'Шкаф купе изд. 11'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (12).jpg", name : 'Шкаф купе изд. 12'},
-						{ src : "/assets/images/goods/shkaf/kupe/1 (13).jpg", name : 'Шкаф купе изд. 13'}
+						{ id : 1, src : "/assets/images/goods/shkaf/kupe/1 (1).jpg", name : 'Шкаф купе изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/kupe/1 (2).jpg", name : 'Шкаф купе изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/kupe/1 (3).jpg", name : 'Шкаф купе изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/kupe/1 (4).jpg", name : 'Шкаф купе изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/kupe/1 (5).jpg", name : 'Шкаф купе изд. 5'},
+						{ id : 6, src : "/assets/images/goods/shkaf/kupe/1 (6).jpg", name : 'Шкаф купе изд. 6'},
+						{ id : 7, src : "/assets/images/goods/shkaf/kupe/1 (7).jpg", name : 'Шкаф купе изд. 7'},
+						{ id : 8, src : "/assets/images/goods/shkaf/kupe/1 (8).jpg", name : 'Шкаф купе изд. 8'},
+						{ id : 9, src : "/assets/images/goods/shkaf/kupe/1 (9).jpg", name : 'Шкаф купе изд. 9'},
+						{ id : 10, src : "/assets/images/goods/shkaf/kupe/1 (10).jpg", name : 'Шкаф купе изд. 10'},
+						{ id : 11, src : "/assets/images/goods/shkaf/kupe/1 (11).jpg", name : 'Шкаф купе изд. 11'},
+						{ id : 12, src : "/assets/images/goods/shkaf/kupe/1 (12).jpg", name : 'Шкаф купе изд. 12'},
+						{ id : 13, src : "/assets/images/goods/shkaf/kupe/1 (13).jpg", name : 'Шкаф купе изд. 13'}
 					]
 				},
 				lest : {
@@ -139,8 +139,8 @@ module.exports = {
 						description : 'Выбрать и заказать встроенный шкаф под лестницу по индивидуальному заказу вы можете в компании «Кондор». Наши мастера помогут вам с выбором материалов и проведут бесплатный замер.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/lest/1 (2).jpg", name : 'Лестничный шкаф изд. 2'}
+						{ id : 1, src : "/assets/images/goods/shkaf/lest/1 (1).jpg", name : 'Лестничный шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/lest/1 (2).jpg", name : 'Лестничный шкаф изд. 2'}
 					]
 				},
 				vino : {
@@ -153,8 +153,8 @@ module.exports = {
 						description : 'Винные шкафы на заказ в Москве вы сможете купить в нашей компании. Мы с радостью изготовим для вас винный шкаф по вашим размерам и из любых материалов.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/vino/1 (2).jpg", name : 'Винный шкаф изд. 2'}
+						{ id : 1, src : "/assets/images/goods/shkaf/vino/1 (1).jpg", name : 'Винный шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/vino/1 (2).jpg", name : 'Винный шкаф изд. 2'}
 					]
 				},
 				vstr : {
@@ -167,10 +167,10 @@ module.exports = {
 						description : 'Встроенные шкафы на заказ по индивидуальным размерам в Москве от компании “Кондор”. Наша встраиваемые шкафы купе впишутся в любую нишу в вашем доме.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/vstr/1 (2).jpg", name : 'Встроенный шкаф изд. 2'},
-						{ src : "/assets/images/goods/shkaf/vstr/1 (3).jpg", name : 'Встроенный шкаф изд. 3'},
-						{ src : "/assets/images/goods/shkaf/vstr/1 (4).jpg", name : 'Встроенный шкаф изд. 4'}
+						{ id : 1, src : "/assets/images/goods/shkaf/vstr/1 (1).jpg", name : 'Встроенный шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/vstr/1 (2).jpg", name : 'Встроенный шкаф изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/vstr/1 (3).jpg", name : 'Встроенный шкаф изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/vstr/1 (4).jpg", name : 'Встроенный шкаф изд. 4'}
 					]
 				},
 				photo : {
@@ -183,13 +183,13 @@ module.exports = {
 						description : 'Компания “Кондор” изготовит для вас шкафы купе с фотопечатью на стекле на заказ в Москве. Наши мастера изготовят для вас шкаф любой формы: радиусный, угловой. Мы работаем быстро и качественно.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью изд. 1'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (2).jpg", name : 'Шкаф c фотопечатью изд. 2'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (3).jpg", name : 'Шкаф c фотопечатью изд. 3'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (4).jpg", name : 'Шкаф c фотопечатью изд. 4'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (5).jpg", name : 'Шкаф c фотопечатью изд. 5'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (6).jpg", name : 'Шкаф c фотопечатью изд. 6'},
-						{ src : "/assets/images/goods/shkaf/photo/1 (7).jpg", name : 'Шкаф c фотопечатью изд. 7'}
+						{ id : 1, src : "/assets/images/goods/shkaf/photo/1 (1).jpg", name : 'Шкаф c фотопечатью изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/photo/1 (2).jpg", name : 'Шкаф c фотопечатью изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/photo/1 (3).jpg", name : 'Шкаф c фотопечатью изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/photo/1 (4).jpg", name : 'Шкаф c фотопечатью изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/photo/1 (5).jpg", name : 'Шкаф c фотопечатью изд. 5'},
+						{ id : 6, src : "/assets/images/goods/shkaf/photo/1 (6).jpg", name : 'Шкаф c фотопечатью изд. 6'},
+						{ id : 7, src : "/assets/images/goods/shkaf/photo/1 (7).jpg", name : 'Шкаф c фотопечатью изд. 7'}
 					]
 				},
 				rasp : {
@@ -202,16 +202,16 @@ module.exports = {
 						description : 'Подобрать и купить распашные шкафы на заказ по индивидуальным размерам в Москве вы можете в компании “Кондор”. Двустворчатый, трехстворчатый, встроенный распашной шкаф все эти модели шкафов с радостью изготовят для вас наши мастера.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (2).jpg", name : 'Распашной шкаф изд. 2'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (3).jpg", name : 'Распашной шкаф изд. 3'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (4).jpg", name : 'Распашной шкаф изд. 4'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (5).jpg", name : 'Распашной шкаф изд. 5'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (6).jpg", name : 'Распашной шкаф изд. 6'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (7).jpg", name : 'Распашной шкаф изд. 7'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (8).jpg", name : 'Распашной шкаф изд. 8'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (9).jpg", name : 'Распашной шкаф изд. 9'},
-						{ src : "/assets/images/goods/shkaf/rasp/1 (10).jpg", name : 'Распашной шкаф изд. 10'}
+						{ id : 1, src : "/assets/images/goods/shkaf/rasp/1 (1).jpg", name : 'Распашной шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/rasp/1 (2).jpg", name : 'Распашной шкаф изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/rasp/1 (3).jpg", name : 'Распашной шкаф изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/rasp/1 (4).jpg", name : 'Распашной шкаф изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/rasp/1 (5).jpg", name : 'Распашной шкаф изд. 5'},
+						{ id : 6, src : "/assets/images/goods/shkaf/rasp/1 (6).jpg", name : 'Распашной шкаф изд. 6'},
+						{ id : 7, src : "/assets/images/goods/shkaf/rasp/1 (7).jpg", name : 'Распашной шкаф изд. 7'},
+						{ id : 8, src : "/assets/images/goods/shkaf/rasp/1 (8).jpg", name : 'Распашной шкаф изд. 8'},
+						{ id : 9, src : "/assets/images/goods/shkaf/rasp/1 (9).jpg", name : 'Распашной шкаф изд. 9'},
+						{ id : 10, src : "/assets/images/goods/shkaf/rasp/1 (10).jpg", name : 'Распашной шкаф изд. 10'}
 					]
 				},
 				ugol : {
@@ -224,11 +224,11 @@ module.exports = {
 						description : 'Подобрать и купить угловой шкаф по индивидуальным размерам на заказ в Москве вы можете в компании Кондор. Мы поможем вам выбрать навесной шкаф в любую комнату: спальню, гостиную, кухню, ванную.',
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/ugol/1 (2).jpg", name : 'Угловой шкаф изд. 2'},
-						{ src : "/assets/images/goods/shkaf/ugol/1 (3).jpg", name : 'Угловой шкаф изд. 3'},
-						{ src : "/assets/images/goods/shkaf/ugol/1 (4).jpg", name : 'Угловой шкаф изд. 4'},
-						{ src : "/assets/images/goods/shkaf/ugol/1 (5).jpg", name : 'Угловой шкаф изд. 5'}
+						{ id : 1, src : "/assets/images/goods/shkaf/ugol/1 (1).jpg", name : 'Угловой шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/ugol/1 (2).jpg", name : 'Угловой шкаф изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/ugol/1 (3).jpg", name : 'Угловой шкаф изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/ugol/1 (4).jpg", name : 'Угловой шкаф изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/ugol/1 (5).jpg", name : 'Угловой шкаф изд. 5'}
 					]
 				},
 				rad : {
@@ -241,13 +241,13 @@ module.exports = {
 						description : 'Подобрать и купить радиусные шкафы купе по индивидуальным размерам на заказ в Москве вы можете в компании “Кондор”. Мы с радостью изготовим для вас угловой радиусный шкаф в кротчайшие сроки.'
 					},
 					images : [
-						{ src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиусный шкаф изд. 1'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (2).jpg", name : 'Радиусный шкаф изд. 2'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (3).jpg", name : 'Радиусный шкаф изд. 3'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (4).jpg", name : 'Радиусный шкаф изд. 4'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (5).jpg", name : 'Радиусный шкаф изд. 5'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (6).jpg", name : 'Радиусный шкаф изд. 6'},
-						{ src : "/assets/images/goods/shkaf/rad/1 (7).jpg", name : 'Радиусный шкаф изд. 7'}
+						{ id : 1, src : "/assets/images/goods/shkaf/rad/1 (1).jpg", name : 'Радиусный шкаф изд. 1'},
+						{ id : 2, src : "/assets/images/goods/shkaf/rad/1 (2).jpg", name : 'Радиусный шкаф изд. 2'},
+						{ id : 3, src : "/assets/images/goods/shkaf/rad/1 (3).jpg", name : 'Радиусный шкаф изд. 3'},
+						{ id : 4, src : "/assets/images/goods/shkaf/rad/1 (4).jpg", name : 'Радиусный шкаф изд. 4'},
+						{ id : 5, src : "/assets/images/goods/shkaf/rad/1 (5).jpg", name : 'Радиусный шкаф изд. 5'},
+						{ id : 6, src : "/assets/images/goods/shkaf/rad/1 (6).jpg", name : 'Радиусный шкаф изд. 6'},
+						{ id : 7, src : "/assets/images/goods/shkaf/rad/1 (7).jpg", name : 'Радиусный шкаф изд. 7'}
 					]
 				}
 			}
@@ -263,16 +263,16 @@ module.exports = {
 				description : 'Кровати на заказ по индивидуальным размерам недорого от компании “Кондор” в Москве. Мы работаем с любыми проектами будь то: Нестандартная, двухъярусная, кровать чердак, шкаф-кровать, детская кровать.'
 			},
 			images : [
-				{ src : "/assets/images/goods/bed/1 (1).jpg", name : 'Кровать изд. 1'},
-				{ src : "/assets/images/goods/bed/1 (2).jpg", name : 'Кровать изд. 2'},
-				{ src : "/assets/images/goods/bed/1 (3).jpg", name : 'Кровать изд. 3'},
-				{ src : "/assets/images/goods/bed/1 (4).jpg", name : 'Кровать изд. 4'},
-				{ src : "/assets/images/goods/bed/1 (5).jpg", name : 'Кровать изд. 5'},
-				{ src : "/assets/images/goods/bed/1 (6).jpg", name : 'Кровать изд. 6'},
-				{ src : "/assets/images/goods/bed/1 (7).jpg", name : 'Кровать изд. 7'},
-				{ src : "/assets/images/goods/bed/1 (8).jpg", name : 'Кровать изд. 8'},
-				{ src : "/assets/images/goods/bed/1 (9).jpg", name : 'Кровать изд. 9'},
-				{ src : "/assets/images/goods/bed/1 (10).jpg", name : 'Кровать изд. 10'}
+				{ id : 1, src : "/assets/images/goods/bed/1 (1).jpg", name : 'Кровать изд. 1'},
+				{ id : 2, src : "/assets/images/goods/bed/1 (2).jpg", name : 'Кровать изд. 2'},
+				{ id : 3, src : "/assets/images/goods/bed/1 (3).jpg", name : 'Кровать изд. 3'},
+				{ id : 4, src : "/assets/images/goods/bed/1 (4).jpg", name : 'Кровать изд. 4'},
+				{ id : 5, src : "/assets/images/goods/bed/1 (5).jpg", name : 'Кровать изд. 5'},
+				{ id : 6, src : "/assets/images/goods/bed/1 (6).jpg", name : 'Кровать изд. 6'},
+				{ id : 7, src : "/assets/images/goods/bed/1 (7).jpg", name : 'Кровать изд. 7'},
+				{ id : 8, src : "/assets/images/goods/bed/1 (8).jpg", name : 'Кровать изд. 8'},
+				{ id : 9, src : "/assets/images/goods/bed/1 (9).jpg", name : 'Кровать изд. 9'},
+				{ id : 10, src : "/assets/images/goods/bed/1 (10).jpg", name : 'Кровать изд. 10'}
 			],
 			types : {
 				inside_bed : {
@@ -285,13 +285,13 @@ module.exports = {
 						description : 'Выбрать и купить откидные кровати на заказ, встроенные откидные кровати, подъемные кровати, откидные двуспальные кровати, встроенные в шкаф, шкаф-кровать в Москве по индивидуальным размерам.'
 					},
 					images : [
-						{ src : "/assets/images/goods/bed/inside_bed/1 (1).jpg", name : 'Встроенная кровать изд. 1'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (2).jpg", name : 'Встроенная кровать изд. 2'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (3).jpg", name : 'Встроенная кровать изд. 3'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (4).jpg", name : 'Встроенная кровать изд. 4'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (5).jpg", name : 'Встроенная кровать изд. 5'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (6).jpg", name : 'Встроенная кровать изд. 6'},
-						{ src : "/assets/images/goods/bed/inside_bed/1 (7).jpg", name : 'Встроенная кровать изд. 7'}
+						{ id : 1, src : "/assets/images/goods/bed/inside_bed/1 (1).jpg", name : 'Встроенная кровать изд. 1'},
+						{ id : 2, src : "/assets/images/goods/bed/inside_bed/1 (2).jpg", name : 'Встроенная кровать изд. 2'},
+						{ id : 3, src : "/assets/images/goods/bed/inside_bed/1 (3).jpg", name : 'Встроенная кровать изд. 3'},
+						{ id : 4, src : "/assets/images/goods/bed/inside_bed/1 (4).jpg", name : 'Встроенная кровать изд. 4'},
+						{ id : 5, src : "/assets/images/goods/bed/inside_bed/1 (5).jpg", name : 'Встроенная кровать изд. 5'},
+						{ id : 6, src : "/assets/images/goods/bed/inside_bed/1 (6).jpg", name : 'Встроенная кровать изд. 6'},
+						{ id : 7, src : "/assets/images/goods/bed/inside_bed/1 (7).jpg", name : 'Встроенная кровать изд. 7'}
 					]
 				}
 			}
@@ -307,13 +307,13 @@ module.exports = {
 			},
 			image : { src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница изд. 1'},
 			images : [
-				{ src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница изд. 1'},
-				{ src : "/assets/images/goods/obuv/1 (1).jpg", name : 'Обувница изд. 2'},
-				{ src : "/assets/images/goods/obuv/1 (2).jpg", name : 'Обувница изд. 3'},
-				{ src : "/assets/images/goods/obuv/1 (3).jpg", name : 'Обувница изд. 4'},
-				{ src : "/assets/images/goods/obuv/1 (4).jpg", name : 'Обувница изд. 5'},
-				{ src : "/assets/images/goods/obuv/1 (5).jpg", name : 'Обувница изд. 6'},
-				{ src : "/assets/images/goods/obuv/1 (7).jpg", name : 'Обувница изд. 7'}
+				{ id : 1, src : "/assets/images/goods/obuv/1 (6).jpg", name : 'Обувница изд. 1'},
+				{ id : 2, src : "/assets/images/goods/obuv/1 (1).jpg", name : 'Обувница изд. 2'},
+				{ id : 3, src : "/assets/images/goods/obuv/1 (2).jpg", name : 'Обувница изд. 3'},
+				{ id : 4, src : "/assets/images/goods/obuv/1 (3).jpg", name : 'Обувница изд. 4'},
+				{ id : 5, src : "/assets/images/goods/obuv/1 (4).jpg", name : 'Обувница изд. 5'},
+				{ id : 6, src : "/assets/images/goods/obuv/1 (5).jpg", name : 'Обувница изд. 6'},
+				{ id : 7, src : "/assets/images/goods/obuv/1 (7).jpg", name : 'Обувница изд. 7'}
 			]
 		},
 		vitrini : {
@@ -326,20 +326,20 @@ module.exports = {
 				description : 'Компания “Кондор” Изготовит для вас Торговое оборудование: витрины, стеклянные прилавки, стеллажи на заказ в Москве. Торговая мебель на заказ.',
 			},
 			images : [
-				{ src : "/assets/images/goods/vitrini/1 (1).jpg", name : 'Витрина изд. 1'},
-				{ src : "/assets/images/goods/vitrini/1 (2).jpg", name : 'Витрина изд. 2'},
-				{ src : "/assets/images/goods/vitrini/1 (3).jpg", name : 'Витрина изд. 3'},
-				{ src : "/assets/images/goods/vitrini/1 (4).jpg", name : 'Витрина изд. 4'},
-				{ src : "/assets/images/goods/vitrini/1 (5).jpg", name : 'Витрина изд. 5'},
-				{ src : "/assets/images/goods/vitrini/1 (6).jpg", name : 'Витрина изд. 6'},
-				{ src : "/assets/images/goods/vitrini/1 (7).jpg", name : 'Витрина изд. 7'},
-				{ src : "/assets/images/goods/vitrini/1 (8).jpg", name : 'Витрина изд. 8'},
-				{ src : "/assets/images/goods/vitrini/1 (9).jpg", name : 'Витрина изд. 9'},
-				{ src : "/assets/images/goods/vitrini/1 (10).jpg", name : 'Витрина изд. 10'},
-				{ src : "/assets/images/goods/vitrini/1 (11).jpg", name : 'Витрина изд. 11'},
-				{ src : "/assets/images/goods/vitrini/1 (12).jpg", name : 'Витрина изд. 12'},
-				{ src : "/assets/images/goods/vitrini/1 (13).jpg", name : 'Витрина изд. 13'},
-				{ src : "/assets/images/goods/vitrini/1 (14).jpg", name : 'Витрина изд. 14'}
+				{ id : 1, src : "/assets/images/goods/vitrini/1 (1).jpg", name : 'Витрина изд. 1'},
+				{ id : 2, src : "/assets/images/goods/vitrini/1 (2).jpg", name : 'Витрина изд. 2'},
+				{ id : 3, src : "/assets/images/goods/vitrini/1 (3).jpg", name : 'Витрина изд. 3'},
+				{ id : 4, src : "/assets/images/goods/vitrini/1 (4).jpg", name : 'Витрина изд. 4'},
+				{ id : 5, src : "/assets/images/goods/vitrini/1 (5).jpg", name : 'Витрина изд. 5'},
+				{ id : 6, src : "/assets/images/goods/vitrini/1 (6).jpg", name : 'Витрина изд. 6'},
+				{ id : 7, src : "/assets/images/goods/vitrini/1 (7).jpg", name : 'Витрина изд. 7'},
+				{ id : 8, src : "/assets/images/goods/vitrini/1 (8).jpg", name : 'Витрина изд. 8'},
+				{ id : 9, src : "/assets/images/goods/vitrini/1 (9).jpg", name : 'Витрина изд. 9'},
+				{ id : 10, src : "/assets/images/goods/vitrini/1 (10).jpg", name : 'Витрина изд. 10'},
+				{ id : 11, src : "/assets/images/goods/vitrini/1 (11).jpg", name : 'Витрина изд. 11'},
+				{ id : 12, src : "/assets/images/goods/vitrini/1 (12).jpg", name : 'Витрина изд. 12'},
+				{ id : 13, src : "/assets/images/goods/vitrini/1 (13).jpg", name : 'Витрина изд. 13'},
+				{ id : 14, src : "/assets/images/goods/vitrini/1 (14).jpg", name : 'Витрина изд. 14'}
 			]
 		},
 		reception : {
@@ -353,13 +353,13 @@ module.exports = {
 				description : 'Компания “Кондор” Изготовит для вас Торговое оборудование: витрины, стеклянные прилавки, стеллажи на заказ в Москве. Мы занимаемся производством стоек администратора ресепшн на заказ.',
 			},
 			images : [
-				{ src : "/assets/images/goods/reception/1 (6).jpg", name : 'Ресепшн изд. 1'},
-				{ src : "/assets/images/goods/reception/1 (5).jpg", name : 'Ресепшн изд. 2'},
-				{ src : "/assets/images/goods/reception/1 (4).jpg", name : 'Ресепшн изд. 3'},
-				{ src : "/assets/images/goods/reception/1 (8).jpg", name : 'Ресепшн изд. 4'},
-				{ src : "/assets/images/goods/reception/1 (1).jpg", name : 'Ресепшн изд. 5'},
-				{ src : "/assets/images/goods/reception/1 (2).jpg", name : 'Ресепшн изд. 6'},
-				{ src : "/assets/images/goods/reception/1 (3).jpg", name : 'Ресепшн изд. 7'}
+				{ id : 1, src : "/assets/images/goods/reception/1 (6).jpg", name : 'Ресепшн изд. 1'},
+				{ id : 2, src : "/assets/images/goods/reception/1 (5).jpg", name : 'Ресепшн изд. 2'},
+				{ id : 3, src : "/assets/images/goods/reception/1 (4).jpg", name : 'Ресепшн изд. 3'},
+				{ id : 4, src : "/assets/images/goods/reception/1 (8).jpg", name : 'Ресепшн изд. 4'},
+				{ id : 5, src : "/assets/images/goods/reception/1 (1).jpg", name : 'Ресепшн изд. 5'},
+				{ id : 6, src : "/assets/images/goods/reception/1 (2).jpg", name : 'Ресепшн изд. 6'},
+				{ id : 7, src : "/assets/images/goods/reception/1 (3).jpg", name : 'Ресепшн изд. 7'}
 			]
 		}
 	},
@@ -376,23 +376,23 @@ module.exports = {
 				title : 'Купить книжный шкаф и библиотеку для дома на заказ по индивидуальным размерам.'
 			},
 			images : [
-				{ src : "/assets/images/spots/lib/main.jpg", name : 'Библиотека изд. 1'},
-				{ src : "/assets/images/spots/lib/1.jpg", name : 'Библиотека изд. 1'},
-				{ src : "/assets/images/spots/lib/2.jpg", name : 'Библиотека изд. 2'},
-				{ src : "/assets/images/spots/lib/3.jpg", name : 'Библиотека изд. 3'},
-				{ src : "/assets/images/spots/lib/4.jpg", name : 'Библиотека изд. 4'},
-				{ src : "/assets/images/spots/lib/5.jpg", name : 'Библиотека изд. 5'},
-				{ src : "/assets/images/spots/lib/6.jpg", name : 'Библиотека изд. 6'},
-		    	{ src : "/assets/images/spots/lib/7.jpg", name : 'Библиотека изд. 7'},
-				{ src : "/assets/images/spots/lib/8.jpg", name : 'Библиотека изд. 8'},
-		    	{ src : "/assets/images/spots/lib/9.jpg", name : 'Библиотека изд. 9'},
-		    	{ src : "/assets/images/spots/lib/10.jpg", name : 'Библиотека изд. 10'},
-		    	{ src : "/assets/images/spots/lib/11.jpg", name : 'Библиотека изд. 11'},
-		    	{ src : "/assets/images/spots/lib/12.jpg", name : 'Библиотека изд. 12'},
-		    	{ src : "/assets/images/spots/lib/13.jpg", name : 'Библиотека изд. 13'},
-		    	{ src : "/assets/images/spots/lib/14.jpg", name : 'Библиотека изд. 14'},
-		    	{ src : "/assets/images/spots/lib/15.jpg", name : 'Библиотека изд. 15'},
-		    	{ src : "/assets/images/spots/lib/16.jpg", name : 'Библиотека изд. 16'}
+				{ id : 0, src : "/assets/images/spots/lib/main.jpg", name : 'Библиотека изд. 1'},
+				{ id : 1, src : "/assets/images/spots/lib/1.jpg", name : 'Библиотека изд. 1'},
+				{ id : 2, src : "/assets/images/spots/lib/2.jpg", name : 'Библиотека изд. 2'},
+				{ id : 3, src : "/assets/images/spots/lib/3.jpg", name : 'Библиотека изд. 3'},
+				{ id : 4, src : "/assets/images/spots/lib/4.jpg", name : 'Библиотека изд. 4'},
+				{ id : 5, src : "/assets/images/spots/lib/5.jpg", name : 'Библиотека изд. 5'},
+				{ id : 6, src : "/assets/images/spots/lib/6.jpg", name : 'Библиотека изд. 6'},
+		    	{ id : 7, src : "/assets/images/spots/lib/7.jpg", name : 'Библиотека изд. 7'},
+				{ id : 8, src : "/assets/images/spots/lib/8.jpg", name : 'Библиотека изд. 8'},
+		    	{ id : 9, src : "/assets/images/spots/lib/9.jpg", name : 'Библиотека изд. 9'},
+		    	{ id : 10, src : "/assets/images/spots/lib/10.jpg", name : 'Библиотека изд. 10'},
+		    	{ id : 11, src : "/assets/images/spots/lib/11.jpg", name : 'Библиотека изд. 11'},
+		    	{ id : 12, src : "/assets/images/spots/lib/12.jpg", name : 'Библиотека изд. 12'},
+		    	{ id : 13, src : "/assets/images/spots/lib/13.jpg", name : 'Библиотека изд. 13'},
+		    	{ id : 14, src : "/assets/images/spots/lib/14.jpg", name : 'Библиотека изд. 14'},
+		    	{ id : 15, src : "/assets/images/spots/lib/15.jpg", name : 'Библиотека изд. 15'},
+		    	{ id : 16, src : "/assets/images/spots/lib/16.jpg", name : 'Библиотека изд. 16'}
 			]
 		},
 		vannaya : {
@@ -407,34 +407,34 @@ module.exports = {
 				title : 'Купить мебель для ванной комнаты на заказ по индивидуальным размерам в Москве.'
 			},
 			images : [
-				{ src : "/assets/images/spots/bath/main.jpg", name : 'Ванная изд. 1'},
-				{ src : "/assets/images/spots/bath/1.jpg", name : 'Ванная изд. 1'},
-				{ src : "/assets/images/spots/bath/2.jpg", name : 'Ванная изд. 2'},
-				{ src : "/assets/images/spots/bath/3.jpg", name : 'Ванная изд. 3'},
-				{ src : "/assets/images/spots/bath/4.jpg", name : 'Ванная изд. 4'},
-				{ src : "/assets/images/spots/bath/5.jpg", name : 'Ванная изд. 5'},
-				{ src : "/assets/images/spots/bath/6.jpg", name : 'Ванная изд. 6'},
-				{ src : "/assets/images/spots/bath/7.jpg", name : 'Ванная изд. 7'},
-				{ src : "/assets/images/spots/bath/8.jpg", name : 'Ванная изд. 8'},
-				{ src : "/assets/images/spots/bath/9.jpg", name : 'Ванная изд. 9'},
-				{ src : "/assets/images/spots/bath/10.jpg", name : 'Ванная изд. 10'},
-				{ src : "/assets/images/spots/bath/11.jpg", name : 'Ванная изд. 11'},
-				{ src : "/assets/images/spots/bath/12.jpg", name : 'Ванная изд. 12'},
-				{ src : "/assets/images/spots/bath/13.jpg", name : 'Ванная изд. 13'},
-				{ src : "/assets/images/spots/bath/14.jpg", name : 'Ванная изд. 14'},
-				{ src : "/assets/images/spots/bath/15.jpg", name : 'Ванная изд. 15'},
-				{ src : "/assets/images/spots/bath/16.jpg", name : 'Ванная изд. 16'},
-				{ src : "/assets/images/spots/bath/17.jpg", name : 'Ванная изд. 17'},
-				{ src : "/assets/images/spots/bath/18.jpg", name : 'Ванная изд. 18'},
-				{ src : "/assets/images/spots/bath/19.jpg", name : 'Ванная изд. 19'},
-				{ src : "/assets/images/spots/bath/20.jpg", name : 'Ванная изд. 20'},
-				{ src : "/assets/images/spots/bath/21.jpg", name : 'Ванная изд. 21'},
-				{ src : "/assets/images/spots/bath/22.jpg", name : 'Ванная изд. 22'},
-				{ src : "/assets/images/spots/bath/23.jpg", name : 'Ванная изд. 23'},
-				{ src : "/assets/images/spots/bath/24.jpg", name : 'Ванная изд. 24'},
-				{ src : "/assets/images/spots/bath/25.jpg", name : 'Ванная изд. 25'},
-				{ src : "/assets/images/spots/bath/26.jpg", name : 'Ванная изд. 26'},
-				{ src : "/assets/images/spots/bath/27.jpg", name : 'Ванная изд. 27'}
+				{ id : 0, src : "/assets/images/spots/bath/main.jpg", name : 'Ванная изд. 1'},
+				{ id : 1, src : "/assets/images/spots/bath/1.jpg", name : 'Ванная изд. 1'},
+				{ id : 2, src : "/assets/images/spots/bath/2.jpg", name : 'Ванная изд. 2'},
+				{ id : 3, src : "/assets/images/spots/bath/3.jpg", name : 'Ванная изд. 3'},
+				{ id : 4, src : "/assets/images/spots/bath/4.jpg", name : 'Ванная изд. 4'},
+				{ id : 5, src : "/assets/images/spots/bath/5.jpg", name : 'Ванная изд. 5'},
+				{ id : 6, src : "/assets/images/spots/bath/6.jpg", name : 'Ванная изд. 6'},
+				{ id : 7, src : "/assets/images/spots/bath/7.jpg", name : 'Ванная изд. 7'},
+				{ id : 8, src : "/assets/images/spots/bath/8.jpg", name : 'Ванная изд. 8'},
+				{ id : 9, src : "/assets/images/spots/bath/9.jpg", name : 'Ванная изд. 9'},
+				{ id : 10, src : "/assets/images/spots/bath/10.jpg", name : 'Ванная изд. 10'},
+				{ id : 11, src : "/assets/images/spots/bath/11.jpg", name : 'Ванная изд. 11'},
+				{ id : 12, src : "/assets/images/spots/bath/12.jpg", name : 'Ванная изд. 12'},
+				{ id : 13, src : "/assets/images/spots/bath/13.jpg", name : 'Ванная изд. 13'},
+				{ id : 14, src : "/assets/images/spots/bath/14.jpg", name : 'Ванная изд. 14'},
+				{ id : 15, src : "/assets/images/spots/bath/15.jpg", name : 'Ванная изд. 15'},
+				{ id : 16, src : "/assets/images/spots/bath/16.jpg", name : 'Ванная изд. 16'},
+				{ id : 17, src : "/assets/images/spots/bath/17.jpg", name : 'Ванная изд. 17'},
+				{ id : 18, src : "/assets/images/spots/bath/18.jpg", name : 'Ванная изд. 18'},
+				{ id : 19, src : "/assets/images/spots/bath/19.jpg", name : 'Ванная изд. 19'},
+				{ id : 20, src : "/assets/images/spots/bath/20.jpg", name : 'Ванная изд. 20'},
+				{ id : 21, src : "/assets/images/spots/bath/21.jpg", name : 'Ванная изд. 21'},
+				{ id : 22, src : "/assets/images/spots/bath/22.jpg", name : 'Ванная изд. 22'},
+				{ id : 23, src : "/assets/images/spots/bath/23.jpg", name : 'Ванная изд. 23'},
+				{ id : 24, src : "/assets/images/spots/bath/24.jpg", name : 'Ванная изд. 24'},
+				{ id : 25, src : "/assets/images/spots/bath/25.jpg", name : 'Ванная изд. 25'},
+				{ id : 26, src : "/assets/images/spots/bath/26.jpg", name : 'Ванная изд. 26'},
+				{ id : 27, src : "/assets/images/spots/bath/27.jpg", name : 'Ванная изд. 27'}
 			]
 		},
 		gostinaya : {
@@ -449,22 +449,22 @@ module.exports = {
 				title : 'Корпусная и модульная мебель для гостиной на заказ. Гостиная под заказ в Москве.',
 			},
 			images : [
-				{ src : "/assets/images/spots/gosti/main.jpg", name : 'Гостинная изд. 1'},
-				{ src : "/assets/images/spots/gosti/1 (1).jpg", name : 'Гостинная изд. 1'},
-				{ src : "/assets/images/spots/gosti/1 (2).jpg", name : 'Гостинная изд. 2'},
-				{ src : "/assets/images/spots/gosti/1 (3).jpg", name : 'Гостинная изд. 3'},
-				{ src : "/assets/images/spots/gosti/1 (4).jpg", name : 'Гостинная изд. 4'},
-				{ src : "/assets/images/spots/gosti/1 (5).jpg", name : 'Гостинная изд. 5'},
-				{ src : "/assets/images/spots/gosti/1 (6).jpg", name : 'Гостинная изд. 6'},
-				{ src : "/assets/images/spots/gosti/1 (7).jpg", name : 'Гостинная изд. 7'},
-				{ src : "/assets/images/spots/gosti/1 (8).jpg", name : 'Гостинная изд. 8'},
-				{ src : "/assets/images/spots/gosti/1 (9).jpg", name : 'Гостинная изд. 9'},
-				{ src : "/assets/images/spots/gosti/1 (10).jpg", name : 'Гостинная изд. 10'},
-				{ src : "/assets/images/spots/gosti/1 (11).jpg", name : 'Гостинная изд. 11'},
-				{ src : "/assets/images/spots/gosti/1 (12).jpg", name : 'Гостинная изд. 12'},
-				{ src : "/assets/images/spots/gosti/1 (13).jpg", name : 'Гостинная изд. 13'},
-				{ src : "/assets/images/spots/gosti/1 (14).jpg", name : 'Гостинная изд. 14'},
-				{ src : "/assets/images/spots/gosti/1 (15).jpg", name : 'Гостинная изд. 15'}
+				{ id : 0, src : "/assets/images/spots/gosti/main.jpg", name : 'Гостинная изд. 1'},
+				{ id : 1, src : "/assets/images/spots/gosti/1 (1).jpg", name : 'Гостинная изд. 1'},
+				{ id : 2, src : "/assets/images/spots/gosti/1 (2).jpg", name : 'Гостинная изд. 2'},
+				{ id : 3, src : "/assets/images/spots/gosti/1 (3).jpg", name : 'Гостинная изд. 3'},
+				{ id : 4, src : "/assets/images/spots/gosti/1 (4).jpg", name : 'Гостинная изд. 4'},
+				{ id : 5, src : "/assets/images/spots/gosti/1 (5).jpg", name : 'Гостинная изд. 5'},
+				{ id : 6, src : "/assets/images/spots/gosti/1 (6).jpg", name : 'Гостинная изд. 6'},
+				{ id : 7, src : "/assets/images/spots/gosti/1 (7).jpg", name : 'Гостинная изд. 7'},
+				{ id : 8, src : "/assets/images/spots/gosti/1 (8).jpg", name : 'Гостинная изд. 8'},
+				{ id : 9, src : "/assets/images/spots/gosti/1 (9).jpg", name : 'Гостинная изд. 9'},
+				{ id : 10, src : "/assets/images/spots/gosti/1 (10).jpg", name : 'Гостинная изд. 10'},
+				{ id : 11, src : "/assets/images/spots/gosti/1 (11).jpg", name : 'Гостинная изд. 11'},
+				{ id : 12, src : "/assets/images/spots/gosti/1 (12).jpg", name : 'Гостинная изд. 12'},
+				{ id : 13, src : "/assets/images/spots/gosti/1 (13).jpg", name : 'Гостинная изд. 13'},
+				{ id : 14, src : "/assets/images/spots/gosti/1 (14).jpg", name : 'Гостинная изд. 14'},
+				{ id : 15, src : "/assets/images/spots/gosti/1 (15).jpg", name : 'Гостинная изд. 15'}
 			]
 		},
 		detskaya : {
@@ -479,19 +479,19 @@ module.exports = {
 				title : 'Детская мебель на заказ Москва. Детская мебель для двоих. Детская корпусная мебель.'
 			},
 			images : [
-				{ src : "/assets/images/spots/kids/main.jpg", name : 'Детская изд. 1'},
-				{ src : "/assets/images/spots/kids/1 (1).jpg", name : 'Детская изд. 1'},
-				{ src : "/assets/images/spots/kids/1 (2).jpg", name : 'Детская изд. 2'},
-				{ src : "/assets/images/spots/kids/1 (3).jpg", name : 'Детская изд. 3'},
-				{ src : "/assets/images/spots/kids/1 (4).jpg", name : 'Детская изд. 4'},
-				{ src : "/assets/images/spots/kids/1 (5).jpg", name : 'Детская изд. 5'},
-				{ src : "/assets/images/spots/kids/1 (6).jpg", name : 'Детская изд. 6'},
-				{ src : "/assets/images/spots/kids/1 (7).jpg", name : 'Детская изд. 7'},
-				{ src : "/assets/images/spots/kids/1 (8).jpg", name : 'Детская изд. 8'},
-				{ src : "/assets/images/spots/kids/1 (9).jpg", name : 'Детская изд. 9'},
-				{ src : "/assets/images/spots/kids/1 (10).jpg", name : 'Детская изд. 10'},
-				{ src : "/assets/images/spots/kids/1 (11).jpg", name : 'Детская изд. 11'},
-				{ src : "/assets/images/spots/kids/1 (12).jpg", name : 'Детская изд. 12'}
+				{ id : 0, src : "/assets/images/spots/kids/main.jpg", name : 'Детская изд. 1'},
+				{ id : 1, src : "/assets/images/spots/kids/1 (1).jpg", name : 'Детская изд. 1'},
+				{ id : 2, src : "/assets/images/spots/kids/1 (2).jpg", name : 'Детская изд. 2'},
+				{ id : 3, src : "/assets/images/spots/kids/1 (3).jpg", name : 'Детская изд. 3'},
+				{ id : 4, src : "/assets/images/spots/kids/1 (4).jpg", name : 'Детская изд. 4'},
+				{ id : 5, src : "/assets/images/spots/kids/1 (5).jpg", name : 'Детская изд. 5'},
+				{ id : 6, src : "/assets/images/spots/kids/1 (6).jpg", name : 'Детская изд. 6'},
+				{ id : 7, src : "/assets/images/spots/kids/1 (7).jpg", name : 'Детская изд. 7'},
+				{ id : 8, src : "/assets/images/spots/kids/1 (8).jpg", name : 'Детская изд. 8'},
+				{ id : 9, src : "/assets/images/spots/kids/1 (9).jpg", name : 'Детская изд. 9'},
+				{ id : 10, src : "/assets/images/spots/kids/1 (10).jpg", name : 'Детская изд. 10'},
+				{ id : 11, src : "/assets/images/spots/kids/1 (11).jpg", name : 'Детская изд. 11'},
+				{ id : 12, src : "/assets/images/spots/kids/1 (12).jpg", name : 'Детская изд. 12'}
 			]
 		},
 		kuhni : {
@@ -506,27 +506,27 @@ module.exports = {
 				title : 'Кухни на заказ в Москве. Кухня на заказ по индивидуальным размерам.'
 			},
 			images : [
-				{ src : "/assets/images/spots/kitchen/main.jpg", name : 'Кафе изд. 1'},
-				{ src : "/assets/images/spots/kitchen/1 (1).jpg", name : 'Кафе изд. 1'},
-				{ src : "/assets/images/spots/kitchen/1 (2).jpg", name : 'Кафе изд. 2'},
-				{ src : "/assets/images/spots/kitchen/1 (3).jpg", name : 'Кафе изд. 3'},
-				{ src : "/assets/images/spots/kitchen/1 (4).jpg", name : 'Кафе изд. 4'},
-				{ src : "/assets/images/spots/kitchen/1 (5).jpg", name : 'Кафе изд. 5'},
-				{ src : "/assets/images/spots/kitchen/1 (6).jpg", name : 'Кафе изд. 6'},
-				{ src : "/assets/images/spots/kitchen/1 (7).jpg", name : 'Кафе изд. 7'},
-				{ src : "/assets/images/spots/kitchen/1 (8).jpg", name : 'Кафе изд. 8'},
-				{ src : "/assets/images/spots/kitchen/1 (9).jpg", name : 'Кафе изд. 9'},
-				{ src : "/assets/images/spots/kitchen/1 (10).jpg", name : 'Кафе изд. 10'},
-				{ src : "/assets/images/spots/kitchen/1 (11).jpg", name : 'Кафе изд. 11'},
-				{ src : "/assets/images/spots/kitchen/1 (12).jpg", name : 'Кафе изд. 12'},
-				{ src : "/assets/images/spots/kitchen/1 (13).jpg", name : 'Кафе изд. 13'},
-				{ src : "/assets/images/spots/kitchen/1 (14).jpg", name : 'Кафе изд. 14'},
-				{ src : "/assets/images/spots/kitchen/1 (15).jpg", name : 'Кафе изд. 15'},
-				{ src : "/assets/images/spots/kitchen/1 (16).jpg", name : 'Кафе изд. 16'},
-				{ src : "/assets/images/spots/kitchen/1 (17).jpg", name : 'Кафе изд. 17'},
-				{ src : "/assets/images/spots/kitchen/1 (18).jpg", name : 'Кафе изд. 18'},
-				{ src : "/assets/images/spots/kitchen/1 (19).jpg", name : 'Кафе изд. 19'},
-				{ src : "/assets/images/spots/kitchen/1 (20).jpg", name : 'Кафе изд. 20'}
+				{ id : 0, src : "/assets/images/spots/kitchen/main.jpg", name : 'Кафе изд. 1'},
+				{ id : 1, src : "/assets/images/spots/kitchen/1 (1).jpg", name : 'Кафе изд. 1'},
+				{ id : 2, src : "/assets/images/spots/kitchen/1 (2).jpg", name : 'Кафе изд. 2'},
+				{ id : 3, src : "/assets/images/spots/kitchen/1 (3).jpg", name : 'Кафе изд. 3'},
+				{ id : 4, src : "/assets/images/spots/kitchen/1 (4).jpg", name : 'Кафе изд. 4'},
+				{ id : 5, src : "/assets/images/spots/kitchen/1 (5).jpg", name : 'Кафе изд. 5'},
+				{ id : 6, src : "/assets/images/spots/kitchen/1 (6).jpg", name : 'Кафе изд. 6'},
+				{ id : 7, src : "/assets/images/spots/kitchen/1 (7).jpg", name : 'Кафе изд. 7'},
+				{ id : 8, src : "/assets/images/spots/kitchen/1 (8).jpg", name : 'Кафе изд. 8'},
+				{ id : 9, src : "/assets/images/spots/kitchen/1 (9).jpg", name : 'Кафе изд. 9'},
+				{ id : 10, src : "/assets/images/spots/kitchen/1 (10).jpg", name : 'Кафе изд. 10'},
+				{ id : 11, src : "/assets/images/spots/kitchen/1 (11).jpg", name : 'Кафе изд. 11'},
+				{ id : 12, src : "/assets/images/spots/kitchen/1 (12).jpg", name : 'Кафе изд. 12'},
+				{ id : 13, src : "/assets/images/spots/kitchen/1 (13).jpg", name : 'Кафе изд. 13'},
+				{ id : 14, src : "/assets/images/spots/kitchen/1 (14).jpg", name : 'Кафе изд. 14'},
+				{ id : 15, src : "/assets/images/spots/kitchen/1 (15).jpg", name : 'Кафе изд. 15'},
+				{ id : 16, src : "/assets/images/spots/kitchen/1 (16).jpg", name : 'Кафе изд. 16'},
+				{ id : 17, src : "/assets/images/spots/kitchen/1 (17).jpg", name : 'Кафе изд. 17'},
+				{ id : 18, src : "/assets/images/spots/kitchen/1 (18).jpg", name : 'Кафе изд. 18'},
+				{ id : 19, src : "/assets/images/spots/kitchen/1 (19).jpg", name : 'Кафе изд. 19'},
+				{ id : 20, src : "/assets/images/spots/kitchen/1 (20).jpg", name : 'Кафе изд. 20'}
 			]
 		},
 		ofis : {
@@ -541,18 +541,18 @@ module.exports = {
 				title : 'Офисная мебель на заказ. Изготовление офисной мебели на заказ Москва.'
 			},
 			images : [
-				{ src : "/assets/images/spots/office/main.jpg", name : 'Кафе изд. 1'},
-				{ src : "/assets/images/spots/office/1 (1).jpg", name : 'Кафе изд. 1'},
-				{ src : "/assets/images/spots/office/1 (2).jpg", name : 'Кафе изд. 2'},
-				{ src : "/assets/images/spots/office/1 (3).jpg", name : 'Кафе изд. 3'},
-				{ src : "/assets/images/spots/office/1 (4).jpg", name : 'Кафе изд. 4'},
-				{ src : "/assets/images/spots/office/1 (5).jpg", name : 'Кафе изд. 5'},
-				{ src : "/assets/images/spots/office/1 (6).jpg", name : 'Кафе изд. 6'},
-				{ src : "/assets/images/spots/office/1 (7).jpg", name : 'Кафе изд. 7'},
-				{ src : "/assets/images/spots/office/1 (8).jpg", name : 'Кафе изд. 8'},
-				{ src : "/assets/images/spots/office/1 (9).jpg", name : 'Кафе изд. 9'},
-				{ src : "/assets/images/spots/office/1 (10).jpg", name : 'Кафе изд. 10'},
-				{ src : "/assets/images/spots/office/1 (11).jpg", name : 'Кафе изд. 11'}
+				{ id : 0, src : "/assets/images/spots/office/main.jpg", name : 'Кафе изд. 1'},
+				{ id : 1, src : "/assets/images/spots/office/1 (1).jpg", name : 'Кафе изд. 1'},
+				{ id : 2, src : "/assets/images/spots/office/1 (2).jpg", name : 'Кафе изд. 2'},
+				{ id : 3, src : "/assets/images/spots/office/1 (3).jpg", name : 'Кафе изд. 3'},
+				{ id : 4, src : "/assets/images/spots/office/1 (4).jpg", name : 'Кафе изд. 4'},
+				{ id : 5, src : "/assets/images/spots/office/1 (5).jpg", name : 'Кафе изд. 5'},
+				{ id : 6, src : "/assets/images/spots/office/1 (6).jpg", name : 'Кафе изд. 6'},
+				{ id : 7, src : "/assets/images/spots/office/1 (7).jpg", name : 'Кафе изд. 7'},
+				{ id : 8, src : "/assets/images/spots/office/1 (8).jpg", name : 'Кафе изд. 8'},
+				{ id : 9, src : "/assets/images/spots/office/1 (9).jpg", name : 'Кафе изд. 9'},
+				{ id : 10, src : "/assets/images/spots/office/1 (10).jpg", name : 'Кафе изд. 10'},
+				{ id : 11, src : "/assets/images/spots/office/1 (11).jpg", name : 'Кафе изд. 11'}
 			]
 		},
 		prihozhaya : {
@@ -567,23 +567,23 @@ module.exports = {
 				title : 'Прихожая на заказ Москва. Прихожая на заказ по индивидуальным размерам недорого.'
 			},
 			images : [
-				{ src : "/assets/images/spots/prihoj/main.jpg", name : 'Прихожая изд. 1'},
-				{ src : "/assets/images/spots/prihoj/1 (1).jpg", name : 'Прихожая изд. 1'},
-				{ src : "/assets/images/spots/prihoj/1 (2).jpg", name : 'Прихожая изд. 2'},
-				{ src : "/assets/images/spots/prihoj/1 (3).jpg", name : 'Прихожая изд. 3'},
-				{ src : "/assets/images/spots/prihoj/1 (4).jpg", name : 'Прихожая изд. 4'},
-				{ src : "/assets/images/spots/prihoj/1 (5).jpg", name : 'Прихожая изд. 5'},
-				{ src : "/assets/images/spots/prihoj/1 (6).jpg", name : 'Прихожая изд. 6'},
-				{ src : "/assets/images/spots/prihoj/1 (7).jpg", name : 'Прихожая изд. 7'},
-				{ src : "/assets/images/spots/prihoj/1 (8).jpg", name : 'Прихожая изд. 8'},
-				{ src : "/assets/images/spots/prihoj/1 (9).jpg", name : 'Прихожая изд. 9'},
-				{ src : "/assets/images/spots/prihoj/1 (10).jpg", name : 'Прихожая изд. 10'},
-				{ src : "/assets/images/spots/prihoj/1 (11).jpg", name : 'Прихожая изд. 11'},
-				{ src : "/assets/images/spots/prihoj/1 (12).jpg", name : 'Прихожая изд. 12'},
-				{ src : "/assets/images/spots/prihoj/1 (13).jpg", name : 'Прихожая изд. 13'},
-				{ src : "/assets/images/spots/prihoj/1 (14).jpg", name : 'Прихожая изд. 14'},
-				{ src : "/assets/images/spots/prihoj/1 (15).jpg", name : 'Прихожая изд. 15'},
-				{ src : "/assets/images/spots/prihoj/1 (16).jpg", name : 'Прихожая изд. 16'}
+				{ id : 0, src : "/assets/images/spots/prihoj/main.jpg", name : 'Прихожая изд. 1'},
+				{ id : 1, src : "/assets/images/spots/prihoj/1 (1).jpg", name : 'Прихожая изд. 1'},
+				{ id : 2, src : "/assets/images/spots/prihoj/1 (2).jpg", name : 'Прихожая изд. 2'},
+				{ id : 3, src : "/assets/images/spots/prihoj/1 (3).jpg", name : 'Прихожая изд. 3'},
+				{ id : 4, src : "/assets/images/spots/prihoj/1 (4).jpg", name : 'Прихожая изд. 4'},
+				{ id : 5, src : "/assets/images/spots/prihoj/1 (5).jpg", name : 'Прихожая изд. 5'},
+				{ id : 6, src : "/assets/images/spots/prihoj/1 (6).jpg", name : 'Прихожая изд. 6'},
+				{ id : 7, src : "/assets/images/spots/prihoj/1 (7).jpg", name : 'Прихожая изд. 7'},
+				{ id : 8, src : "/assets/images/spots/prihoj/1 (8).jpg", name : 'Прихожая изд. 8'},
+				{ id : 9, src : "/assets/images/spots/prihoj/1 (9).jpg", name : 'Прихожая изд. 9'},
+				{ id : 10, src : "/assets/images/spots/prihoj/1 (10).jpg", name : 'Прихожая изд. 10'},
+				{ id : 11, src : "/assets/images/spots/prihoj/1 (11).jpg", name : 'Прихожая изд. 11'},
+				{ id : 12, src : "/assets/images/spots/prihoj/1 (12).jpg", name : 'Прихожая изд. 12'},
+				{ id : 13, src : "/assets/images/spots/prihoj/1 (13).jpg", name : 'Прихожая изд. 13'},
+				{ id : 14, src : "/assets/images/spots/prihoj/1 (14).jpg", name : 'Прихожая изд. 14'},
+				{ id : 15, src : "/assets/images/spots/prihoj/1 (15).jpg", name : 'Прихожая изд. 15'},
+				{ id : 16, src : "/assets/images/spots/prihoj/1 (16).jpg", name : 'Прихожая изд. 16'}
 			]
 		},
 		spalnya : {
@@ -598,11 +598,11 @@ module.exports = {
 				title : 'Мебель для спальни на заказ Москва. Спальня на заказ по индивидуальным проектам.'
 			},
 			images : [
-				{ src : "/assets/images/spots/sleep/main.jpg", name : 'Спальня изд. 1'},
-				{ src : "/assets/images/spots/sleep/1.jpg", name : 'Спальня изд. 1'},
-				{ src : "/assets/images/spots/sleep/2.jpg", name : 'Спальня изд. 2'},
-				{ src : "/assets/images/spots/sleep/3.jpg", name : 'Спальня изд. 3'},
-				{ src : "/assets/images/spots/sleep/4.jpg", name : 'Спальня изд. 4'}
+				{ id : 0, src : "/assets/images/spots/sleep/main.jpg", name : 'Спальня изд. 1'},
+				{ id : 1, src : "/assets/images/spots/sleep/1.jpg", name : 'Спальня изд. 1'},
+				{ id : 2, src : "/assets/images/spots/sleep/2.jpg", name : 'Спальня изд. 2'},
+				{ id : 3, src : "/assets/images/spots/sleep/3.jpg", name : 'Спальня изд. 3'},
+				{ id : 4, src : "/assets/images/spots/sleep/4.jpg", name : 'Спальня изд. 4'}
 			]
 		},
 		fitness_center : {
@@ -617,12 +617,12 @@ module.exports = {
 				title : 'Мебель для фитнес центров на заказ в Москве.'
 			},
 			images : [
-				{ src : "/assets/images/spots/fitness/main.jpg", name : 'Фитнесс-центр изд. 1'},
-				{ src : "/assets/images/spots/fitness/1.jpg", name : 'Фитнесс-центр изд. 1'},
-				{ src : "/assets/images/spots/fitness/2.jpg", name : 'Фитнесс-центр изд. 2'},
-				{ src : "/assets/images/spots/fitness/3.jpg", name : 'Фитнесс-центр изд. 3'},
-				{ src : "/assets/images/spots/fitness/4.jpg", name : 'Фитнесс-центр изд. 4'},
-				{ src : "/assets/images/spots/fitness/5.jpg", name : 'Фитнесс-центр изд. 5'}
+				{ id : 0, src : "/assets/images/spots/fitness/main.jpg", name : 'Фитнесс-центр изд. 1'},
+				{ id : 1, src : "/assets/images/spots/fitness/1.jpg", name : 'Фитнесс-центр изд. 1'},
+				{ id : 2, src : "/assets/images/spots/fitness/2.jpg", name : 'Фитнесс-центр изд. 2'},
+				{ id : 3, src : "/assets/images/spots/fitness/3.jpg", name : 'Фитнесс-центр изд. 3'},
+				{ id : 4, src : "/assets/images/spots/fitness/4.jpg", name : 'Фитнесс-центр изд. 4'},
+				{ id : 5, src : "/assets/images/spots/fitness/5.jpg", name : 'Фитнесс-центр изд. 5'}
 			]
 		}
 	}
